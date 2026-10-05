@@ -23,6 +23,10 @@ node dev-server.mjs
 
 배포 파일은 Actions가 `dist/`에 만들며, `config.local.js`에는 Secret에서 읽은 브라우저용 API 키가 들어간다. Google Maps 브라우저 키는 방문자 브라우저로 전달되므로 비밀값으로 남지 않는다. GitHub Secret은 키를 저장소 코드에 직접 커밋하지 않게 해주며, 실제 사용 제한은 Google Cloud의 HTTP referrer 제한과 API 쿼터로 설정한다. 로컬 개발은 기존 `config.local.js` 방식을 그대로 사용한다.
 
+## 계획 문서
+
+`PLANS.md`는 날짜별 일정 plan, 음식점 choice, 경로 데이터의 구조와 수정 절차를 설명한다. Codex와 Claude Code 공통 작업 규칙은 `AGENTS.md`, Claude Code 진입 안내는 `CLAUDE.md`를 참고한다.
+
 ## 일정 데이터 수정
 
 기본 일정은 `src/data/trip.json`, 대체 코스는 `plans.json`, 식당·카페 후보는 `choices.json`, 지도 확대 구역은 `focus-groups.json`에서 관리한다. 모두 `src/data/`에 있으며 화면 코드를 수정하지 않고 편집할 수 있다.
