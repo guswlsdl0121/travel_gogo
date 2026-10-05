@@ -1,5 +1,5 @@
 // Browser contract fixture. No external Maps or paid Routes calls are made.
-window.__maps = { requests: 0, fits: 0, markers: [], zoom: 13 };
+window.__maps = { requests: 0, fits: 0, markers: [], circles: [], zoom: 13 };
 class EventTargetStub {
   constructor() { this.listeners = {}; }
   addListener(name, fn) {
@@ -46,8 +46,14 @@ class InfoStub extends EventTargetStub {
   open() { window.__maps.infoOpen = true; }
   close() { window.__maps.infoOpen = false; }
 }
+class CircleStub {
+  constructor(options) { Object.assign(this, options); window.__maps.circles.push(this); }
+  setCenter(center) { this.center = center; }
+  setRadius(radius) { this.radius = radius; }
+  setMap(map) { this.map = map; }
+}
 window.google = { maps: {
-  Map: MapStub, LatLngBounds: BoundsStub, InfoWindow: InfoStub,
+  Map: MapStub, LatLngBounds: BoundsStub, InfoWindow: InfoStub, Circle: CircleStub,
   marker: { AdvancedMarkerElement: MarkerStub },
   Polyline: class { setMap() {} setOptions() {} },
   event: { addListenerOnce(target, name, fn) {

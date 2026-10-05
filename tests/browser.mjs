@@ -10,6 +10,19 @@ try {
     const errors = [];
     page.on('pageerror', (error) => errors.push(error.message));
     await page.addInitScript({ path: new URL('./fixtures/google-maps.js', import.meta.url).pathname.replace(/^\/(\w:)/, '$1') });
+    await page.addInitScript(() => {
+      window.__geo = { watches: 0, cleared: 0, success: null, error: null };
+      Object.defineProperty(navigator, 'geolocation', { configurable: true, value: {
+        watchPosition(success, error) {
+          window.__geo.watches++;
+          window.__geo.success = success;
+          window.__geo.error = error;
+          setTimeout(() => success({ coords: { latitude: 33.59, longitude: 130.4, accuracy: 18, heading: null, speed: 0 } }), 10);
+          return window.__geo.watches;
+        },
+        clearWatch() { window.__geo.cleared++; }
+      } });
+    });
     await page.route('**/config.local.js', (route) => route.fulfill({ contentType: 'text/javascript', body: 'window.TRIP_CONFIG = { googleMapsApiKey: "test-key" };' }));
     await page.goto('http://127.0.0.1:4173');
     await page.waitForSelector('.map-pin');
@@ -87,6 +100,26 @@ try {
     await page.locator('.day-tab').nth(1).click();
     await page.locator('.plan-tab').nth(1).click();
     assert.ok(await page.locator('[data-stop-id="02-07-1"]').count());
+    const locationButton = page.locator('#locate-me');
+    assert.equal(await locationButton.isEnabled(), true);
+    await locationButton.click();
+    await page.waitForSelector('.user-location-marker');
+    assert.equal(await locationButton.getAttribute('aria-pressed'), 'true');
+    assert.equal(await page.evaluate(() => window.__maps.circles[0].radius), 18);
+    await page.evaluate(() => window.dispatchEvent(Object.assign(new Event('deviceorientation'), { webkitCompassHeading: 90 })));
+    assert.equal(await page.locator('.user-location-marker.has-heading').count(), 1);
+    await page.locator('.day-tab').nth(2).click();
+    assert.equal(await page.locator('.user-location-marker').count(), 1);
+    assert.equal(await page.evaluate(() => window.__geo.watches), 1);
+    await locationButton.click();
+    assert.equal(await page.evaluate(() => window.__geo.watches), 1);
+    await page.evaluate(() => window.__geo.success({ coords: { latitude: 33.6, longitude: 130.41, accuracy: 11, heading: null, speed: 0 } }));
+    assert.equal(await page.evaluate(() => window.__maps.circles[0].radius), 11);
+    assert.equal(await page.evaluate(() => window.__maps.circles[0].center.lat), 33.6);
+    await page.evaluate(() => window.__geo.error({ code: 1 }));
+    assert.equal(await page.locator('.user-location-marker').count(), 0);
+    assert.equal(await locationButton.getAttribute('aria-pressed'), 'false');
+    assert.ok((await page.locator('#location-status').textContent()).includes('거부'));
     assert.deepEqual(errors, []);
     console.log(`PASS ${width}×${height}: layout, repeated selection, zoom, marker stacking, dismiss, keyboard, days, Plan B`);
     await page.close();

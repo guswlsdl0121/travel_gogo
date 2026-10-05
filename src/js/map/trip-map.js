@@ -1,6 +1,7 @@
 import { loadGoogleMaps } from './load.js';
 import { createPin, createInfoWindow } from './presentation.js';
 import { getRouteColor, getTravelMode, createRouteCacheKey, readCachedPath, writeCachedPath } from './routes.js';
+import { UserLocationLayer } from './user-location-layer.js';
 
 export class TripMap {
   constructor(element, onStopSelect, onSelectionClear) {
@@ -35,6 +36,7 @@ export class TripMap {
       clickableIcons: false
     });
     this.infoWindow = new google.maps.InfoWindow({ disableAutoPan: true });
+    this.userLocation = new UserLocationLayer(this.map);
     this.map.addListener("click", () => this.onSelectionClear());
     this.infoWindow.addListener('closeclick', () => this.onSelectionClear());
   }
@@ -118,6 +120,14 @@ export class TripMap {
     });
     this.highlightRoute(null);
   }
+
+  updateUserLocation(coords, heading) { this.userLocation?.update(coords, heading); }
+
+  setUserHeading(heading) { this.userLocation?.setHeading(heading); }
+
+  focusUserLocation() { return this.userLocation?.focus() ?? false; }
+
+  clearUserLocation() { this.userLocation?.clear(); }
 
   cancelViewportListener() {
     this.viewportListener?.remove();

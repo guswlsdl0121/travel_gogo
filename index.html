@@ -38,6 +38,10 @@
               <button id="map-size-toggle" type="button" aria-pressed="false">지도 넓게</button>
             </div>
           </div>
+          <button id="locate-me" class="map-location-button" type="button" aria-label="내 위치 표시" aria-pressed="false" title="내 위치 표시" disabled>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+          </button>
+          <span id="location-status" class="map-location-status" role="status" hidden></span>
           <div class="map-legend" aria-label="이동 경로 색상">
             <span style="--route-color:#27343d"><i></i>도보</span>
             <span style="--route-color:#075bd4"><i></i>대중교통</span>

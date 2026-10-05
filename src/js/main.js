@@ -1,6 +1,7 @@
 import { loadTripData } from './data/load.js';
 import { resolveDayPlan } from './data/resolve.js';
 import { TripMap } from './map/trip-map.js';
+import { DeviceLocation } from './location/device-location.js';
 import { TripView } from './ui/trip-view.js';
 import { closeChoiceMenus } from './ui/choices.js';
 import { readSelection, writeSelection } from './state/url.js';
@@ -8,6 +9,61 @@ import { readSelection, writeSelection } from './state/url.js';
 const state = { data: null, day: null, planId: 'main', choices: {}, stopId: null, mapReady: false };
 const view = new TripView({ onDaySelect: selectDay, onPlanSelect: selectPlan, onChoiceSelect: selectChoice, onStopSelect: selectStop });
 const tripMap = new TripMap(document.querySelector('#map'), selectStop, clearSelection);
+const locationButton = document.querySelector('#locate-me');
+const locationStatus = document.querySelector('#location-status');
+let focusOnFirstLocation = false;
+const deviceLocation = new DeviceLocation({
+  onPosition(coords, heading) {
+    tripMap.updateUserLocation(coords, heading);
+    locationStatus.hidden = true;
+    locationButton.classList.add('is-active');
+    if (focusOnFirstLocation) {
+      tripMap.focusUserLocation();
+      focusOnFirstLocation = false;
+    }
+  },
+  onHeading(heading) { tripMap.setUserHeading(heading); },
+  onError(message, fatal) {
+    locationStatus.textContent = message;
+    locationStatus.hidden = false;
+    if (fatal) {
+      focusOnFirstLocation = false;
+      tripMap.clearUserLocation();
+      locationButton.classList.remove('is-active');
+      locationButton.setAttribute('aria-pressed', 'false');
+      locationButton.setAttribute('aria-label', '내 위치 표시');
+      locationButton.title = '내 위치 표시';
+    }
+  }
+});
+
+locationButton.addEventListener('click', () => {
+  if (!state.mapReady) return;
+  if (deviceLocation.isTracking) {
+    if (!tripMap.focusUserLocation()) {
+      locationStatus.textContent = '현재 위치를 확인하는 중입니다.';
+      locationStatus.hidden = false;
+    }
+    return;
+  }
+  focusOnFirstLocation = true;
+  if (!deviceLocation.start() || !deviceLocation.isTracking) return;
+  locationButton.setAttribute('aria-pressed', 'true');
+  locationButton.setAttribute('aria-label', '내 위치로 이동');
+  locationButton.title = '내 위치로 이동';
+  locationStatus.textContent = '현재 위치를 확인하는 중입니다.';
+  locationStatus.hidden = false;
+});
+window.addEventListener('pagehide', () => {
+  deviceLocation.stop();
+  tripMap.clearUserLocation();
+  focusOnFirstLocation = false;
+  locationStatus.hidden = true;
+  locationButton.classList.remove('is-active');
+  locationButton.setAttribute('aria-pressed', 'false');
+  locationButton.setAttribute('aria-label', '내 위치 표시');
+  locationButton.title = '내 위치 표시';
+});
 
 async function bootstrap() {
   try {
@@ -19,6 +75,7 @@ async function bootstrap() {
     try {
       await tripMap.initialize(window.TRIP_CONFIG?.googleMapsApiKey);
       state.mapReady = true;
+      locationButton.disabled = false;
       renderMap(state.stopId);
       if (state.stopId) tripMap.focusStop(state.stopId);
     } catch (error) {
