@@ -20,7 +20,7 @@ async function bootstrap() {
       await tripMap.initialize(window.TRIP_CONFIG?.googleMapsApiKey);
       state.mapReady = true;
       renderMap(state.stopId);
-      if (state.stopId) tripMap.focusStop(state.stopId, true, 17);
+      if (state.stopId) tripMap.focusStop(state.stopId);
     } catch (error) {
       view.showMapFallback(error.message);
     }
@@ -74,7 +74,7 @@ function selectStop(stopId) {
   if (!state.day?.stops.some((stop) => stop.id === stopId)) return;
   state.stopId = stopId;
   view.setActiveStop(stopId);
-  if (state.mapReady) tripMap.focusStop(stopId, true, 17);
+  if (state.mapReady) tripMap.focusStop(stopId);
 }
 
 function clearSelection() {

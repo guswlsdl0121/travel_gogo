@@ -20,14 +20,17 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: minmax(0, 43fr) minmax(0, 57fr);
+    gap: 8px;
     height: auto;
     min-height: 0;
     margin-top: 8px;
-    border-radius: 10px 10px 0 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
     box-shadow: none;
   }
   .workspace.is-map-expanded { grid-template-rows: minmax(0, 65fr) minmax(0, 35fr); }
-  .map-panel { min-height: 0; border-right: 0; border-bottom: 1px solid var(--border); }
+  .map-panel { min-height: 0; border: 1px solid var(--border); border-radius: 10px; }
   .map-toolbar { top: 8px; right: 8px; left: 8px; gap: 5px; padding: 4px; border-radius: 7px; }
   .map-toolbar > span { display: none; }
   .map-toolbar__actions { width: 100%; gap: 4px; flex-wrap: wrap; }
@@ -37,7 +40,9 @@
   .map-legend { bottom: 25px; left: 8px; right: auto; gap: 5px 8px; padding: 5px 7px; font-size: 0.6rem; box-shadow: none; }
   .map-legend small { display: none; }
   .map-legend i { width: 12px; }
-  .itinerary-panel { min-height: 0; overflow-y: auto; overscroll-behavior-y: contain; padding: 14px 12px max(20px, env(safe-area-inset-bottom)); scroll-behavior: smooth; }
+  .itinerary-panel { min-height: 0; overflow-y: auto; overscroll-behavior-y: contain; padding: 14px 12px max(20px, env(safe-area-inset-bottom)); border: 1px solid var(--border); border-top: 3px solid var(--accent); border-radius: 10px 10px 0 0; background: var(--surface); scroll-behavior: smooth; }
+  .map-pin { width: 28px; height: 28px; border-width: 1.5px; font-size: 0.6rem; box-shadow: 0 2px 5px rgba(21, 29, 24, 0.24); }
+  .map-pin.is-active { box-shadow: 0 0 0 3px rgba(217, 72, 50, 0.2), 0 3px 8px rgba(21, 29, 24, 0.28); transform: scale(1.12); }
   .day-heading { align-items: center; gap: 10px; }
   .day-heading > div > span { display: none; }
   .day-heading h2 { font-size: 1.05rem; line-height: 1.4; }
@@ -73,5 +78,7 @@
   .trip-header { display: none; }
   .day-tab { flex-direction: row; min-height: 40px; gap: 6px; }
   .workspace, .workspace.is-map-expanded { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); }
+  .map-panel { border-radius: 10px 0 0 10px; }
+  .itinerary-panel { border-top: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 10px 10px 0; }
   #map-size-toggle { display: none; }
 }

@@ -70,7 +70,7 @@ export class TripMap {
     if (!focusStopId) this.fitToDay();
   }
 
-  focusStop(stopId, shouldPan = true, zoomOverride = null) {
+  focusStop(stopId, shouldPan = true) {
     this.cancelViewportListener();
     this.activeStopId = stopId;
     this.markers.forEach((entry, id) => {
@@ -85,7 +85,6 @@ export class TripMap {
     if (!selected) return;
     if (shouldPan) {
       this.map.panTo(selected.stop.location);
-      this.map.setZoom(zoomOverride ?? Math.max(this.map.getZoom(), 14));
     }
     // Mobile uses the selected timeline card for details, keeping the map clear.
     if (window.matchMedia('(min-width: 901px)').matches) {

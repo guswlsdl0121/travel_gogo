@@ -5,7 +5,7 @@ import { pathToFileURL } from 'node:url';
 const { chromium } = await import(process.argv[2] ? pathToFileURL(process.argv[2]).href : 'playwright');
 const browser = await chromium.launch({ channel: 'chrome', headless: true });
 try {
-  for (const [width, height] of [[320, 640], [390, 844], [768, 1024], [844, 390], [1440, 1000]]) {
+  for (const [width, height] of [[320, 640], [360, 780], [390, 844], [402, 874], [768, 1024], [844, 390], [1440, 1000]]) {
     const page = await browser.newPage({ viewport: { width, height }, reducedMotion: 'reduce' });
     const errors = [];
     page.on('pageerror', (error) => errors.push(error.message));
@@ -18,12 +18,19 @@ try {
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
     assert.ok(await page.locator('.day-tabs').evaluate((node) => node.scrollWidth <= node.clientWidth));
     const mapBefore = await page.locator('#map').boundingBox();
+    const zoomBefore = await page.evaluate(() => window.__maps.zoom);
+    if (width <= 900 && height > 500) {
+      const mapPanel = await page.locator('.map-panel').boundingBox();
+      const itinerary = await page.locator('.itinerary-panel').boundingBox();
+      assert.ok(itinerary.y - (mapPanel.y + mapPanel.height) >= 7);
+      assert.ok(await page.locator('.map-pin').first().evaluate((pin) => pin.getBoundingClientRect().width <= 29));
+    }
     await page.locator('.course-options summary').click();
     const trigger = page.locator('.choice-control__trigger').first();
     await trigger.click();
     await page.locator('.choice-control__option.is-selected').first().click();
     assert.equal(await page.locator('.stop.is-active').count(), 1);
-    assert.equal(await page.evaluate(() => window.__maps.zoom), 17);
+    assert.equal(await page.evaluate(() => window.__maps.zoom), zoomBefore);
     assert.equal(await page.evaluate(() => Math.max(...window.__maps.markers.filter((marker) => marker.map).map((marker) => marker.zIndex))), 1000000);
     const requestsBefore = await page.evaluate(() => window.__maps.requests);
     const fitsBefore = await page.evaluate(() => window.__maps.fits);
@@ -36,7 +43,7 @@ try {
     await page.locator('.choice-control__list:not([hidden]) .choice-control__option').nth(1).click();
     await page.waitForTimeout(80);
     assert.equal(await page.evaluate(() => window.__maps.fits), fitsBefore);
-    assert.equal(await page.evaluate(() => window.__maps.zoom), 17);
+    assert.equal(await page.evaluate(() => window.__maps.zoom), zoomBefore);
     if (width <= 900) {
       assert.equal(await page.evaluate(() => window.__maps.infoOpen), false);
       const mapAfter = await page.locator('#map').boundingBox();
