@@ -13,7 +13,7 @@
       "title": "후쿠오카 도착과 텐진 쇼핑",
       "area": "후쿠오카 공항 · 하카타 · 나카스 · 텐진",
       "color": "#a44734",
-      "summary": "하카타역에 도착해 포켓몬센터, 칼디, 단톤을 둘러본 뒤 숙소에 체크인합니다. 이치란 식사 후에는 스투시를 먼저 들르고, 텐진 지하상가·미나 텐진·솔라리아 플라자·파르코를 빠르게 둘러본 다음 칼하트와 세컨드스트리트, 모츠나베 저녁으로 이어집니다.",
+      "summary": "하카타역에서 포켓몬센터·칼디·단톤을 둘러본 뒤 숙소에 체크인합니다. 이치란 식사 후 나카스에서 텐진 북쪽의 미나·파르코로 이동하고, 지하상가·솔라리아를 거쳐 스투시·칼하트·세컨드스트리트 순서로 서쪽을 향해 걸은 다음 아카사카에서 모츠나베를 먹습니다.",
       "stops": [
         {
           "id": "01-01",
@@ -212,29 +212,9 @@
         {
           "id": "01-12",
           "category": "shopping",
-          "name": "스투시 후쿠오카",
-          "time": "17:35",
-          "description": "19시 마감 전에 먼저 방문",
-          "details": [
-            "19시 마감 전에 먼저 들르기",
-            "짧게 둘러본 뒤 텐진 북쪽으로 이동"
-          ],
-          "source": "https://jp.stussy.com/blogs/chapters/stussy-fukuoka",
-          "location": {
-            "lat": 33.5877376,
-            "lng": 130.3973979
-          },
-          "routeFromPrevious": {
-            "mode": "transit",
-            "label": "이치란에서 텐진 방면 지하철·도보로 약 15분"
-          }
-        },
-        {
-          "id": "01-13",
-          "category": "shopping",
           "name": "미나 텐진",
-          "time": "18:05",
-          "description": "텐진 북쪽 쇼핑 구역을 짧게 둘러보기",
+          "time": "17:35",
+          "description": "나카스에서 가장 가까운 텐진 북쪽 쇼핑 구역을 먼저 둘러보기",
           "details": [
             "매장 안을 15분 정도 보고 다음 구역으로 이동"
           ],
@@ -245,53 +225,15 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "스투시에서 텐진 북쪽으로 도보 약 10분"
+            "label": "이치란에서 나카스 강을 건너 미나 텐진까지 도보"
           }
         },
         {
-          "id": "01-14",
-          "category": "shopping",
-          "name": "텐진 지하상가",
-          "time": "18:25",
-          "description": "지하상가를 남쪽으로 지나며 매장 구경",
-          "details": [
-            "매장 안을 15분 정도 보고 다음 구역으로 이동"
-          ],
-          "source": "https://www.tenchika.com/service/",
-          "location": {
-            "lat": 33.5894641,
-            "lng": 130.4004635
-          },
-          "routeFromPrevious": {
-            "mode": "walking",
-            "label": "미나 텐진에서 지하상가까지 도보 약 8분"
-          }
-        },
-        {
-          "id": "01-15",
-          "category": "shopping",
-          "name": "솔라리아 플라자",
-          "time": "18:45",
-          "description": "패션·잡화 매장을 짧게 둘러보기",
-          "details": [
-            "매장 안을 15분 정도 보고 다음 구역으로 이동"
-          ],
-          "source": "https://solariaplaza.com/",
-          "location": {
-            "lat": 33.589345,
-            "lng": 130.398733
-          },
-          "routeFromPrevious": {
-            "mode": "walking",
-            "label": "지하상가에서 도보 약 8분"
-          }
-        },
-        {
-          "id": "01-16",
+          "id": "01-13",
           "category": "shopping",
           "name": "후쿠오카 파르코",
-          "time": "19:05",
-          "description": "본관·신관을 둘러보고 관심 매장 위주로 쇼핑",
+          "time": "17:55",
+          "description": "미나 텐진에서 남쪽으로 내려와 본관·신관의 관심 매장 구경",
           "details": [
             "파르코 물판 기본 영업시간 10:00~20:30",
             "관심 매장을 15~20분 둘러보기"
@@ -303,15 +245,73 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "솔라리아 플라자에서 도보 약 5분"
+            "label": "미나 텐진에서 파르코까지 남쪽으로 도보"
+          }
+        },
+        {
+          "id": "01-14",
+          "category": "shopping",
+          "name": "텐진 지하상가",
+          "time": "18:15",
+          "description": "파르코 옆에서 지하상가로 들어가 남쪽 구간을 따라 이동",
+          "details": [
+            "매장 안을 15분 정도 보고 다음 구역으로 이동"
+          ],
+          "source": "https://www.tenchika.com/service/",
+          "location": {
+            "lat": 33.5894641,
+            "lng": 130.4004635
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "파르코에서 텐진 지하상가로 들어가 남쪽으로 이동"
+          }
+        },
+        {
+          "id": "01-15",
+          "category": "shopping",
+          "name": "솔라리아 플라자",
+          "time": "18:30",
+          "description": "지하상가 남쪽에서 이어지는 패션·잡화 매장 둘러보기",
+          "details": [
+            "매장 안을 15분 정도 보고 다음 구역으로 이동"
+          ],
+          "source": "https://solariaplaza.com/",
+          "location": {
+            "lat": 33.589345,
+            "lng": 130.398733
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "텐진 지하상가에서 솔라리아 플라자로 도보"
+          }
+        },
+        {
+          "id": "01-16",
+          "category": "shopping",
+          "name": "스투시 후쿠오카",
+          "time": "18:45",
+          "description": "19시 마감 전에 짧게 방문",
+          "details": [
+            "공식 안내 영업시간 11:00~19:00",
+            "마감이 빠르므로 앞선 쇼핑이 길어지면 이곳으로 바로 이동"
+          ],
+          "source": "https://jp.stussy.com/blogs/chapters/stussy-fukuoka",
+          "location": {
+            "lat": 33.5877376,
+            "lng": 130.3973979
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "솔라리아 플라자에서 스투시까지 도보"
           }
         },
         {
           "id": "01-17",
           "category": "shopping",
           "name": "칼하트 WIP 후쿠오카",
-          "time": "19:30",
-          "description": "다이묘 매장을 마감 전에 짧게 방문",
+          "time": "19:10",
+          "description": "20시 마감 전에 다이묘 매장을 짧게 방문",
           "details": [
             "영업시간 11:00~20:00",
             "마감 전 15분 정도 방문"
@@ -323,15 +323,15 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "파르코에서 다이묘까지 도보 약 12분"
+            "label": "스투시에서 다이묘의 칼하트까지 도보"
           }
         },
         {
           "id": "01-18",
           "category": "shopping",
           "name": "세컨드스트리트 후쿠오카 텐진점",
-          "time": "19:55",
-          "description": "영업 마감 전에 중고 의류·브랜드 매장 둘러보기",
+          "time": "19:35",
+          "description": "21시까지 영업하는 중고 의류·브랜드 매장 둘러보기",
           "details": [
             "영업시간 11:00~21:00",
             "15분 정도 매장 구경"
@@ -343,7 +343,7 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "칼하트에서 도보 약 7분"
+            "label": "칼하트에서 세컨드스트리트까지 도보"
           }
         },
         {
