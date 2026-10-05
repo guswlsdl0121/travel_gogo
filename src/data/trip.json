@@ -13,7 +13,7 @@
       "title": "하카타 첫날과 쇼핑",
       "area": "하카타역 · 나카스 · 캐널시티 · 텐진",
       "color": "#a44734",
-      "summary": "오전 도착 후 하카타역에서 지역 명물로 점심을 먹고, 단톤·갭·몽벨을 들릅니다. 숙소 체크인과 구시가지 산책, 나카스 저녁도 이어갑니다.",
+      "summary": "오전 도착 후 공항 국내선에서 점심을 먹고 하카타역 단톤에 들른 다음 15시부터 숙소에 체크인합니다. 이후 구시가지 산책과 갭·몽벨 쇼핑, 나카스 저녁을 이어갑니다.",
       "stops": [
         {
           "id": "01-01",
@@ -35,7 +35,11 @@
           "category": "transport",
           "name": "국제선 셔틀 정류장",
           "time": "12:15",
-          "description": "국내선·지하철 방면 무료 셔틀 탑승",
+          "description": "입국·수하물 수령 후 국내선 방면 무료 셔틀 탑승",
+          "details": [
+            "입국장 출구에서 5번 정류장으로 이동",
+            "입국 절차가 길어지면 이후 일정도 늦춰 진행"
+          ],
           "location": {
             "lat": 33.5855,
             "lng": 130.4513
@@ -50,73 +54,73 @@
           "category": "transport",
           "name": "후쿠오카 공항 국내선",
           "time": "12:30",
-          "description": "무료 셔틀 하차",
+          "description": "무료 셔틀 하차 후 3층 식당가로 이동",
           "location": {
             "lat": 33.5971,
             "lng": 130.4478
           },
           "routeFromPrevious": {
             "mode": "driving",
-            "label": "공항 무료 셔틀"
+            "label": "공항 무료 셔틀 · 승차 약 10분, 대기 별도"
           }
         },
         {
           "id": "01-04",
+          "category": "food",
+          "name": "이나바 우동 후쿠오카 공항점",
+          "time": "12:40",
+          "description": "국내선 3층 푸드홀에서 우엉튀김 우동 점심",
+          "details": [
+            "식사·대기 시간 약 45~50분 확보",
+            "라멘·해산물 덮밥으로 점심 선택 가능"
+          ],
+          "source": "https://www.fukuoka-airport.jp/en/shops/inaba-udon.html",
+          "location": {
+            "lat": 33.5971,
+            "lng": 130.4478
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "국내선 3층 식당가로 이동",
+            "draw": false
+          }
+        },
+        {
+          "id": "01-05",
           "category": "transport",
           "name": "후쿠오카공항역",
-          "time": "12:40",
-          "description": "공항선 지하철 탑승",
+          "time": "13:35",
+          "description": "점심 후 공항선 지하철 탑승",
           "location": {
             "lat": 33.5973,
             "lng": 130.4481
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "국내선에서 지하철 개찰구로 이동"
+            "label": "국내선 식당가에서 지하철 개찰구로 이동"
           }
         },
         {
-          "id": "01-05",
+          "id": "01-06",
           "category": "transport",
           "name": "하카타역",
-          "time": "13:00",
-          "description": "점심·단톤 방문을 위해 하차",
+          "time": "13:50",
+          "description": "공항선 하차 후 JR하카타시티로 이동",
           "location": {
             "lat": 33.5902,
             "lng": 130.4207
           },
           "routeFromPrevious": {
             "mode": "transit",
-            "label": "공항선으로 하카타역 이동"
-          }
-        },
-        {
-          "id": "01-06",
-          "category": "food",
-          "name": "멘타이 요리 하카타 쇼보안",
-          "time": "13:10",
-          "description": "명란과 도미 차즈케를 즐기는 하카타역 점심",
-          "details": [
-            "JR하카타시티 구우텐 9층",
-            "대기가 길면 점심 선택지 변경"
-          ],
-          "source": "https://www.kayanoya.com/shop/gohanya-syoubouan/",
-          "location": {
-            "lat": 33.5902478,
-            "lng": 130.4183588
-          },
-          "routeFromPrevious": {
-            "mode": "walking",
-            "label": "역 건물 안 이동",
-            "draw": false
+            "label": "공항선으로 하카타역 이동 · 승차 약 5분, 역 내 이동 별도"
           }
         },
         {
           "id": "01-07",
           "category": "shopping",
           "name": "단톤 후쿠오카",
-          "time": "14:10",
-          "description": "JR하카타시티 4층 직영점",
+          "time": "14:00",
+          "description": "JR하카타시티 4층 직영점에서 약 30분 쇼핑",
           "source": "https://danton.com/ja-jp/pages/shop",
           "location": {
             "lat": 33.5892521,
@@ -124,7 +128,7 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "JR하카타시티 안 이동",
+            "label": "하카타역에서 JR하카타시티 4층으로 이동",
             "draw": false
           }
         },
@@ -133,9 +137,10 @@
           "category": "stay",
           "name": "호텔 오리엔탈 익스프레스 나카스카와바타",
           "time": "15:00",
-          "description": "체크인과 짐 정리",
+          "description": "15시부터 체크인 가능 · 짐 정리",
           "details": [
-            "예약 확정 · 10/6~10/8 · 2박"
+            "예약 확정 · 10/6~10/8 · 2박",
+            "단톤에서 14:30쯤 출발해 나카스카와바타로 이동"
           ],
           "location": {
             "lat": 33.598,
@@ -143,7 +148,7 @@
           },
           "routeFromPrevious": {
             "mode": "transit",
-            "label": "하카타역에서 나카스카와바타역으로 이동 후 도보"
+            "label": "공항선 승차 약 3분 + 도보 약 4분, 역 내 이동·대기 별도"
           }
         },
         {
