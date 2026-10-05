@@ -13,7 +13,7 @@
       "title": "후쿠오카 도착과 텐진 쇼핑",
       "area": "후쿠오카 공항 · 하카타 · 나카스 · 텐진",
       "color": "#a44734",
-      "summary": "공항에서 점심을 먹고 하카타역 단톤을 둘러본 뒤 숙소에 체크인합니다. 저녁에는 이치란을 맛보고 텐진·다이묘 쇼핑을 한 다음, 아카사카의 모츠나베 전문점에서 저녁 식사 후 숙소로 돌아갑니다.",
+      "summary": "하카타역에 도착해 포켓몬센터, 칼디, 단톤을 둘러본 뒤 숙소에 체크인합니다. 이치란 식사 후에는 스투시를 먼저 들르고, 텐진 지하상가·미나 텐진·솔라리아 플라자·파르코를 빠르게 둘러본 다음 칼하트와 세컨드스트리트, 모츠나베 저녁으로 이어집니다.",
       "stops": [
         {
           "id": "01-01",
@@ -118,9 +118,48 @@
         {
           "id": "01-07",
           "category": "shopping",
-          "name": "단톤 후쿠오카",
+          "name": "포켓몬센터 후쿠오카",
           "time": "14:00",
-          "description": "JR하카타시티 4층 직영점에서 약 30분 쇼핑",
+          "description": "하카타 마루이 2층에서 포켓몬 상품 구경",
+          "details": [
+            "매일 10:00~21:00 안내"
+          ],
+          "source": "https://shop.pokemon.co.jp/ja/shop/pokemoncenter-fukuoka/",
+          "location": {
+            "lat": 33.5888683,
+            "lng": 130.4194379
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "하카타역에서 하카타 마루이까지 도보 약 3분"
+          }
+        },
+        {
+          "id": "01-08",
+          "category": "shopping",
+          "name": "칼디커피팜 하카타 마루이점",
+          "time": "14:20",
+          "description": "같은 건물 2층에서 수입 식품·커피 쇼핑",
+          "details": [
+            "매일 10:00~21:00 안내"
+          ],
+          "source": "https://map.kaldi.co.jp/kaldi/detailMap?accmd=0&account=kaldi&bid=552&kkw001=2025-02-19T19%3A59%3A37&pgret=2",
+          "location": {
+            "lat": 33.5888683,
+            "lng": 130.4194379
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "마루이 2층에서 도보 약 2분",
+            "draw": false
+          }
+        },
+        {
+          "id": "01-09",
+          "category": "shopping",
+          "name": "단톤 후쿠오카",
+          "time": "14:35",
+          "description": "JR하카타시티 4층 직영점에서 약 25분 쇼핑",
           "source": "https://danton.com/ja-jp/pages/shop",
           "location": {
             "lat": 33.5892521,
@@ -133,14 +172,14 @@
           }
         },
         {
-          "id": "01-08",
+          "id": "01-10",
           "category": "stay",
           "name": "호텔 오리엔탈 익스프레스 나카스카와바타",
-          "time": "15:00",
+          "time": "15:25",
           "description": "15시부터 체크인 가능 · 짐 정리",
           "details": [
             "예약 확정 · 10/6~10/8 · 2박",
-            "단톤에서 14:30쯤 출발해 나카스카와바타로 이동"
+            "단톤에서 하카타역으로 돌아와 나카스카와바타로 이동"
           ],
           "location": {
             "lat": 33.598,
@@ -148,11 +187,11 @@
           },
           "routeFromPrevious": {
             "mode": "transit",
-            "label": "공항선 승차 약 3분 + 도보 약 4분, 역 내 이동·대기 별도"
+            "label": "하카타역에서 공항선으로 나카스카와바타역까지 이동 후 도보"
           }
         },
         {
-          "id": "01-09",
+          "id": "01-11",
           "category": "food",
           "name": "이치란 본사 총본점",
           "time": "16:30",
@@ -171,14 +210,14 @@
           }
         },
         {
-          "id": "01-10",
+          "id": "01-12",
           "category": "shopping",
           "name": "스투시 후쿠오카",
           "time": "17:35",
           "description": "19시 마감 전에 먼저 방문",
           "details": [
-            "공식 안내 주소: 텐진 2-5-13",
-            "영업시간 11:00~19:00"
+            "19시 마감 전에 먼저 들르기",
+            "짧게 둘러본 뒤 텐진 북쪽으로 이동"
           ],
           "source": "https://jp.stussy.com/blogs/chapters/stussy-fukuoka",
           "location": {
@@ -187,36 +226,95 @@
           },
           "routeFromPrevious": {
             "mode": "transit",
-            "label": "나카스카와바타에서 텐진 방면 지하철·도보"
+            "label": "이치란에서 텐진 방면 지하철·도보로 약 15분"
           }
         },
         {
-          "id": "01-11",
+          "id": "01-13",
           "category": "shopping",
-          "name": "몽벨 후쿠오카 텐진점",
+          "name": "미나 텐진",
           "time": "18:05",
-          "description": "스투시에서 가까운 텐진점, 의류·아웃도어 용품 보기",
-          "source": "https://store.montbell.jp/search/shopinfo/?shop_no=618936",
+          "description": "텐진 북쪽 쇼핑 구역을 짧게 둘러보기",
+          "details": [
+            "매장 안을 15분 정도 보고 다음 구역으로 이동"
+          ],
+          "source": "https://www.mina-tenjin.com/inquiry/",
           "location": {
-            "lat": 33.5877938,
-            "lng": 130.3984352
+            "lat": 33.59261,
+            "lng": 130.398712
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "스투시에서 도보 약 3분"
-          },
-          "details": [
-            "영업시간 10:30~21:00"
-          ]
+            "label": "스투시에서 텐진 북쪽으로 도보 약 10분"
+          }
         },
         {
-          "id": "01-12",
+          "id": "01-14",
+          "category": "shopping",
+          "name": "텐진 지하상가",
+          "time": "18:25",
+          "description": "지하상가를 남쪽으로 지나며 매장 구경",
+          "details": [
+            "매장 안을 15분 정도 보고 다음 구역으로 이동"
+          ],
+          "source": "https://www.tenchika.com/service/",
+          "location": {
+            "lat": 33.5894641,
+            "lng": 130.4004635
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "미나 텐진에서 지하상가까지 도보 약 8분"
+          }
+        },
+        {
+          "id": "01-15",
+          "category": "shopping",
+          "name": "솔라리아 플라자",
+          "time": "18:45",
+          "description": "패션·잡화 매장을 짧게 둘러보기",
+          "details": [
+            "매장 안을 15분 정도 보고 다음 구역으로 이동"
+          ],
+          "source": "https://solariaplaza.com/",
+          "location": {
+            "lat": 33.589345,
+            "lng": 130.398733
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "지하상가에서 도보 약 8분"
+          }
+        },
+        {
+          "id": "01-16",
+          "category": "shopping",
+          "name": "후쿠오카 파르코",
+          "time": "19:05",
+          "description": "본관·신관을 둘러보고 관심 매장 위주로 쇼핑",
+          "details": [
+            "파르코 물판 기본 영업시간 10:00~20:30",
+            "관심 매장을 15~20분 둘러보기"
+          ],
+          "source": "https://fukuoka.parco.jp/info/?gcd=access",
+          "location": {
+            "lat": 33.590839,
+            "lng": 130.398587
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "솔라리아 플라자에서 도보 약 5분"
+          }
+        },
+        {
+          "id": "01-17",
           "category": "shopping",
           "name": "칼하트 WIP 후쿠오카",
-          "time": "18:40",
-          "description": "다이묘 매장에서 쇼핑",
+          "time": "19:30",
+          "description": "다이묘 매장을 마감 전에 짧게 방문",
           "details": [
-            "영업시간 11:00~20:00"
+            "영업시간 11:00~20:00",
+            "마감 전 15분 정도 방문"
           ],
           "source": "https://www.carhartt-wip.com/en/stores/fukuoka",
           "location": {
@@ -225,17 +323,18 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "다이묘 방면 도보 약 10분"
+            "label": "파르코에서 다이묘까지 도보 약 12분"
           }
         },
         {
-          "id": "01-13",
+          "id": "01-18",
           "category": "shopping",
           "name": "세컨드스트리트 후쿠오카 텐진점",
-          "time": "19:20",
-          "description": "다이묘의 브랜드 빈티지·중고 의류 매장",
+          "time": "19:55",
+          "description": "영업 마감 전에 중고 의류·브랜드 매장 둘러보기",
           "details": [
-            "영업시간 11:00~21:00"
+            "영업시간 11:00~21:00",
+            "15분 정도 매장 구경"
           ],
           "source": "https://www.2ndstreet.jp/shop/details?shopsId=30973",
           "location": {
@@ -248,15 +347,15 @@
           }
         },
         {
-          "id": "01-14",
+          "id": "01-19",
           "category": "food",
           "name": "하카타 모츠나베 야마나카 아카사카점",
-          "time": "20:00",
-          "description": "텐진·다이묘 쇼핑 후 아카사카의 유명 모츠나베 전문점에서 저녁",
+          "time": "20:20",
+          "description": "텐진·다이묘 쇼핑 후 아카사카에서 모츠나베 저녁",
           "details": [
             "화~목 영업 16:00~23:00 (라스트오더 22:30)",
             "예약 시 저녁 좌석은 2시간 기준",
-            "예약 가능 · 저녁 식사 후 도보로 숙소 복귀"
+            "쇼핑 마감 후 걸어서 이동"
           ],
           "source": "https://tabelog.com/fukuoka/A4001/A400104/40004383/",
           "location": {
@@ -269,10 +368,10 @@
           }
         },
         {
-          "id": "01-15",
+          "id": "01-20",
           "category": "stay",
           "name": "호텔 복귀",
-          "time": "22:30",
+          "time": "22:50",
           "description": "저녁 식사 후 도보로 숙소 복귀",
           "location": {
             "lat": 33.598,
@@ -288,17 +387,17 @@
     {
       "id": "02",
       "date": "2026-10-07",
-      "title": "후쿠쓰 바닷마을 자전거",
-      "area": "후쿠마 · 미야지다케 · 쓰야자키",
+      "title": "기타큐슈 아울렛과 고쿠라 산책",
+      "area": "기타큐슈 스페이스월드 · 고쿠라 · 하카타",
       "color": "#32665c",
-      "summary": "쓰야자키·미야지다케에서 자전거와 바다를 즐긴 뒤 하카타로 돌아옵니다. 체력이 남으면 저녁 전에 캐널시티와 갭을 짧게 둘러봅니다.",
+      "summary": "하카타에서 JR로 스페이스월드역까지 이동해 아울렛을 둘러보고, 오후에는 고쿠라의 旦過市場와 고쿠라성을 방문합니다. 하카타로 돌아와 시간이 남으면 캐널시티와 갭을 보고 저녁을 먹습니다.",
       "stops": [
         {
           "id": "02-01",
           "category": "stay",
           "name": "호텔 오리엔탈 익스프레스 나카스카와바타",
-          "time": "07:50",
-          "description": "예약 확정 숙소에서 후쿠마로 출발",
+          "time": "08:00",
+          "description": "하카타에서 JR로 기타큐슈 당일 이동",
           "details": [
             "10/6~10/8 · 2박"
           ],
@@ -312,7 +411,7 @@
           "id": "02-02",
           "category": "transport",
           "name": "나카스카와바타역",
-          "time": "08:00",
+          "time": "08:10",
           "description": "공항선 하카타 방면 탑승",
           "includeInBounds": false,
           "location": {
@@ -328,8 +427,8 @@
           "id": "02-03",
           "category": "train",
           "name": "하카타역",
-          "time": "08:15",
-          "description": "JR 가고시마 본선 환승",
+          "time": "08:25",
+          "description": "JR鹿児島本線でスペースワールド駅へ",
           "includeInBounds": false,
           "location": {
             "lat": 33.5902,
@@ -537,7 +636,7 @@
           "id": "02-16",
           "category": "train",
           "name": "하카타역",
-          "time": "16:45",
+          "time": "18:15",
           "description": "공항선으로 환승",
           "includeInBounds": false,
           "location": {
@@ -546,15 +645,14 @@
           },
           "routeFromPrevious": {
             "mode": "transit",
-            "label": "복귀 동선 · 지도선 생략",
-            "draw": false
+            "label": "小倉駅からJRで博多へ約1時間15分"
           }
         },
         {
           "id": "02-17",
           "category": "place",
           "name": "캐널시티 하카타",
-          "time": "17:05",
+          "time": "18:35",
           "description": "하카타역에서 걸어와 쇼핑·휴식",
           "location": {
             "lat": 33.5898,
@@ -562,14 +660,14 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "하카타역에서 도보 약 15~20분"
+            "label": "博多駅からキャナルシティまで徒歩約15分"
           }
         },
         {
           "id": "02-18",
           "category": "shopping",
           "name": "갭 캐널시티 하카타",
-          "time": "17:20",
+          "time": "18:50",
           "description": "캐널시티 사우스빌딩 1층 매장",
           "source": "https://www.gap.co.jp/stores/?storeID=3639",
           "location": {
@@ -578,19 +676,18 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "캐널시티 건물 안 이동",
-            "draw": false
+            "label": "キャナルシティ館内移動"
           }
         },
         {
           "id": "02-19",
           "category": "food",
           "name": "하카타 야키토리 저녁",
-          "time": "18:30",
-          "description": "닭껍질 꼬치와 채소말이",
+          "time": "20:00",
+          "description": "キャナルシティ・ギャップの後にハカタ・中洲エリアで夕食",
           "details": [
-            "모든 복귀 지점은 마커로 표시",
-            "원하면 저녁 전 캐널시티·갭 방문"
+            "焼き鳥・もつ鍋などから選択",
+            "夕食後は宿泊先へ徒歩で戻れるエリア"
           ],
           "includeInBounds": false,
           "location": {
@@ -599,7 +696,142 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "캐널시티에서 숙소 권역까지 도보 약 15분"
+            "label": "저녁 식사 후 숙소까지 도보 약 10~15분"
+          }
+        },
+        {
+          "id": "02-20",
+          "category": "transit",
+          "name": "스페이스월드역",
+          "time": "09:40",
+          "description": "하카타에서 JR 가고시마 본선으로 이동",
+          "details": [
+            "하카타에서 직통 열차 약 1시간~1시간 30분 · 시간대별 차이"
+          ],
+          "source": "https://www.jrkyushu.co.jp/railway/station/1191639_1601.html",
+          "location": {
+            "lat": 33.8710982,
+            "lng": 130.8059894
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "JR 가고시마 본선 직통 약 1시간 10분"
+          }
+        },
+        {
+          "id": "02-21",
+          "category": "shopping",
+          "name": "THE OUTLETS KITAKYUSHU",
+          "time": "10:00",
+          "description": "오전부터 점심 무렵까지 아울렛 쇼핑",
+          "details": [
+            "아울렛 매장 10:00~20:00",
+            "푸드 포레스트에서 점심 후 13시쯤 이동"
+          ],
+          "source": "https://the-outlets-kitakyushu.aeonmall.com/static-pages/hours",
+          "location": {
+            "lat": 33.873387,
+            "lng": 130.811641
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "스페이스월드역에서 도보 약 5분"
+          }
+        },
+        {
+          "id": "02-22",
+          "category": "transit",
+          "name": "스페이스월드역",
+          "time": "13:05",
+          "description": "고쿠라 방면 JR 열차 탑승",
+          "details": [
+            "열차 대기 시간은 당일 시간표 확인"
+          ],
+          "source": "https://www.jrkyushu.co.jp/railway/station/1191639_1601.html",
+          "location": {
+            "lat": 33.8710982,
+            "lng": 130.8059894
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "아울렛에서 역까지 도보 약 5분"
+          }
+        },
+        {
+          "id": "02-23",
+          "category": "transit",
+          "name": "고쿠라역",
+          "time": "13:30",
+          "description": "JR로 고쿠라 중심부 이동",
+          "details": [
+            "스페이스월드역에서 JR로 약 15분"
+          ],
+          "source": "https://www.jrkyushu.co.jp/railway/station/1191639_1601.html",
+          "location": {
+            "lat": 33.886923,
+            "lng": 130.883181
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "JR 가고시마 본선 약 15분"
+          }
+        },
+        {
+          "id": "02-24",
+          "category": "place",
+          "name": "旦過市場",
+          "time": "13:50",
+          "description": "시장을 둘러보고 간식·현지 먹거리 구경",
+          "details": [
+            "일반 안내 10:00~18:00, 점포별 영업시간 상이",
+            "17시 전후 문을 닫는 점포가 많아 오후 일찍 방문"
+          ],
+          "source": "https://www.crossroadfukuoka.jp/spot/13182",
+          "location": {
+            "lat": 33.881312,
+            "lng": 130.879448
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "고쿠라역에서 도보 약 10분"
+          }
+        },
+        {
+          "id": "02-25",
+          "category": "place",
+          "name": "고쿠라성",
+          "time": "15:15",
+          "description": "성 내부와 주변 정원을 관람",
+          "details": [
+            "4~10월 9:00~20:00, 최종 입장 19:30"
+          ],
+          "source": "https://kokura-castle.jp/schedule/",
+          "location": {
+            "lat": 33.8845,
+            "lng": 130.87417
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "旦過市場에서 도보 약 15분"
+          }
+        },
+        {
+          "id": "02-26",
+          "category": "transit",
+          "name": "고쿠라역",
+          "time": "17:00",
+          "description": "하카타 복귀 열차 탑승",
+          "details": [
+            "하카타까지 JR 약 1시간~1시간 20분"
+          ],
+          "source": "https://www.jrkyushu.co.jp/railway/",
+          "location": {
+            "lat": 33.886923,
+            "lng": 130.883181
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "고쿠라성에서 역까지 도보 약 20분"
           }
         }
       ]
