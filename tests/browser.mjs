@@ -22,9 +22,12 @@ try {
     if (width <= 900 && height > 500) {
       const toggle = page.locator('#map-tools-toggle');
       assert.equal(await toggle.getAttribute('aria-expanded'), 'false');
+      assert.equal(await toggle.getAttribute('aria-label'), '지도 옵션 펼치기');
       assert.equal(await page.locator('#map-tools-actions').isVisible(), false);
       await toggle.click();
       assert.equal(await page.locator('#map-tools-actions').isVisible(), true);
+      assert.equal(await toggle.getAttribute('aria-label'), '지도 옵션 접기');
+      assert.ok((await page.locator('.map-toolbar').boundingBox()).height <= 42);
       await page.locator('#map-size-toggle').click();
       assert.ok((await page.locator('#map').boundingBox()).height > mapBefore.height);
       assert.equal(await toggle.getAttribute('aria-expanded'), 'false');
@@ -33,7 +36,7 @@ try {
       const mapPanel = await page.locator('.map-panel').boundingBox();
       const itinerary = await page.locator('.itinerary-panel').boundingBox();
       assert.ok(itinerary.y - (mapPanel.y + mapPanel.height) >= 7);
-      assert.ok(await page.locator('.map-pin').first().evaluate((pin) => pin.getBoundingClientRect().width <= 29));
+      assert.ok(await page.locator('.map-pin').first().evaluate((pin) => pin.getBoundingClientRect().width <= 21));
     }
     await page.locator('.course-options summary').click();
     const trigger = page.locator('.choice-control__trigger').first();
@@ -71,6 +74,15 @@ try {
     for (let day = 1; day < 5; day++) {
       await page.locator('.day-tab').nth(day).click();
       assert.ok(await page.locator('.stop').count() > 0);
+    }
+    if (width <= 900 && height > 500) {
+      await page.locator('.day-tab').nth(2).click();
+      await page.locator('#map-tools-toggle').click();
+      const actionRows = await page.locator('#map-tools-actions button').evaluateAll((buttons) => buttons.map((button) => Math.round(button.getBoundingClientRect().top)));
+      assert.equal(new Set(actionRows).size, 1);
+      assert.ok(await page.locator('#map-tools-actions button').evaluateAll((buttons) => buttons.every((button) => button.scrollWidth <= button.clientWidth)));
+      assert.ok((await page.locator('.map-toolbar').boundingBox()).height <= 42);
+      await page.locator('#map-tools-toggle').click();
     }
     await page.locator('.day-tab').nth(1).click();
     await page.locator('.plan-tab').nth(1).click();

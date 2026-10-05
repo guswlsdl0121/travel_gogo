@@ -88,12 +88,12 @@ const mapToolsToggle = document.querySelector('#map-tools-toggle');
 function closeMapTools() {
   mapToolbar.classList.remove('is-open');
   mapToolsToggle.setAttribute('aria-expanded', 'false');
-  mapToolsToggle.textContent = '옵션 펼치기';
+  mapToolsToggle.setAttribute('aria-label', '지도 옵션 펼치기');
 }
 mapToolsToggle.addEventListener('click', () => {
   const open = mapToolbar.classList.toggle('is-open');
   mapToolsToggle.setAttribute('aria-expanded', String(open));
-  mapToolsToggle.textContent = open ? '옵션 접기' : '옵션 펼치기';
+  mapToolsToggle.setAttribute('aria-label', open ? '지도 옵션 접기' : '지도 옵션 펼치기');
 });
 document.querySelector('#map-tools-actions').addEventListener('click', (event) => {
   if (event.target.closest('button')) closeMapTools();
