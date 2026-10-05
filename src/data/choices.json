@@ -453,8 +453,22 @@
   },
   "01-14": {
     "label": "텐진 쇼핑 후 저녁 식사",
-    "default": "ooyama-tenjin",
+    "default": "yamanaka-akasaka",
     "options": [
+      {
+        "id": "yamanaka-akasaka",
+        "name": "하카타 모츠나베 야마나카 아카사카점",
+        "description": "타베로그 3.67 · 예약 가능 · 화~목 16:00~23:00",
+        "tags": [
+          "모츠나베",
+          "예약 추천"
+        ],
+        "source": "https://tabelog.com/fukuoka/A4001/A400104/40004383/",
+        "location": {
+          "lat": 33.5875983,
+          "lng": 130.3908929
+        }
+      },
       {
         "id": "ooyama-tenjin",
         "name": "모츠나베 오오야마 후쿠오카 파르코점",
