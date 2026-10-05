@@ -48,13 +48,13 @@
     ]
   },
   "01-11": {
-    "label": "첫날 저녁",
+    "label": "쇼핑 전 라멘",
     "default": "ichiran-main",
     "options": [
       {
         "id": "ichiran-main",
         "name": "이치란 본사 총본점",
-        "description": "후쿠오카 첫날 대표 라멘",
+        "description": "21:00 모츠나베 예약을 고려해 쇼핑 전에 라멘을 가볍게 먹기",
         "tags": [
           "라멘",
           "관광"
@@ -447,54 +447,6 @@
         "location": {
           "lat": 33.5897,
           "lng": 130.4202
-        }
-      }
-    ]
-  },
-  "01-19": {
-    "label": "텐진 쇼핑 후 저녁 식사",
-    "default": "yamanaka-akasaka",
-    "options": [
-      {
-        "id": "yamanaka-akasaka",
-        "name": "하카타 모츠나베 야마나카 아카사카점",
-        "description": "타베로그 3.67 · 예약 가능 · 화~목 16:00~23:00",
-        "tags": [
-          "모츠나베",
-          "예약 추천"
-        ],
-        "source": "https://tabelog.com/fukuoka/A4001/A400104/40004383/",
-        "location": {
-          "lat": 33.5875983,
-          "lng": 130.3908929
-        }
-      },
-      {
-        "id": "ooyama-tenjin",
-        "name": "모츠나베 오오야마 후쿠오카 파르코점",
-        "description": "파르코 본관 지하 1층 · 예약 가능 · 23시까지 영업 안내",
-        "tags": [
-          "모츠나베",
-          "텐진"
-        ],
-        "source": "https://tabelog.com/fukuoka/A4001/A400103/40058975/",
-        "location": {
-          "lat": 33.590839,
-          "lng": 130.398587
-        }
-      },
-      {
-        "id": "torikawa-daijin-tenjin",
-        "name": "하카타 도리카와 다이진 텐진 구시보",
-        "description": "ONE FUKUOKA BLDG. 지하 1층 · 예약 불가 · 23시까지 영업",
-        "tags": [
-          "야키토리",
-          "텐진"
-        ],
-        "source": "https://tabelog.com/fukuoka/A4001/A400103/40070458/",
-        "location": {
-          "lat": 33.59095,
-          "lng": 130.39979
         }
       }
     ]

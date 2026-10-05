@@ -13,7 +13,7 @@
       "title": "후쿠오카 도착과 텐진 쇼핑",
       "area": "후쿠오카 공항 · 하카타 · 나카스 · 텐진",
       "color": "#a44734",
-      "summary": "하카타역에서 포켓몬센터·칼디·단톤을 둘러본 뒤 숙소에 체크인합니다. 이치란 식사 후 나카스에서 텐진 북쪽의 미나·파르코로 이동하고, 지하상가·솔라리아를 거쳐 스투시·칼하트·세컨드스트리트 순서로 서쪽을 향해 걸은 다음 아카사카에서 모츠나베를 먹습니다.",
+      "summary": "하카타역에서 포켓몬센터·칼디·단톤을 둘러본 뒤 숙소에 체크인합니다. 이치란 식사 후 텐진의 미나·파르코·지하상가·솔라리아를 거쳐 스투시와 칼하트를 마감 전에 방문합니다. 세컨드스트리트를 여유롭게 둘러본 뒤 21:00 예약한 아카사카의 모츠나베 야마나카로 이동합니다.",
       "stops": [
         {
           "id": "01-01",
@@ -195,7 +195,7 @@
           "category": "food",
           "name": "이치란 본사 총본점",
           "time": "16:30",
-          "description": "텐진 쇼핑 전에 이치란 본사 총본점에서 이른 저녁",
+          "description": "21:00 모츠나베 예약을 고려해 쇼핑 전에 라멘을 가볍게 먹기",
           "details": [
             "식사 약 40~50분 예상, 대기 시간은 별도",
             "본사 총본점은 24시간 운영 안내"
@@ -214,11 +214,12 @@
           "category": "shopping",
           "name": "미나 텐진",
           "time": "17:35",
-          "description": "나카스에서 가장 가까운 텐진 북쪽 쇼핑 구역을 먼저 둘러보기",
+          "description": "유니클로·GU·로프트·ABC-MART가 있는 텐진 북쪽 쇼핑몰",
           "details": [
-            "매장 안을 15분 정도 보고 다음 구역으로 이동"
+            "유니클로 1~2층, GU 3층, 로프트 4층",
+            "관심 매장 위주로 둘러본 뒤 파르코로 이동"
           ],
-          "source": "https://www.mina-tenjin.com/inquiry/",
+          "source": "https://www.mina-tenjin.com/shop/",
           "location": {
             "lat": 33.59261,
             "lng": 130.398712
@@ -233,12 +234,12 @@
           "category": "shopping",
           "name": "후쿠오카 파르코",
           "time": "17:55",
-          "description": "미나 텐진에서 남쪽으로 내려와 본관·신관의 관심 매장 구경",
+          "description": "BEAMS·FREAK'S STORE·Dr. Martens·ABC-MART 등이 있는 쇼핑몰",
           "details": [
             "파르코 물판 기본 영업시간 10:00~20:30",
-            "관심 매장을 15~20분 둘러보기"
+            "본관·신관 중 관심 브랜드를 골라 둘러보기"
           ],
-          "source": "https://fukuoka.parco.jp/info/?gcd=access",
+          "source": "https://fukuoka.parco.jp/shop/?search=category",
           "location": {
             "lat": 33.590839,
             "lng": 130.398587
@@ -253,11 +254,12 @@
           "category": "shopping",
           "name": "텐진 지하상가",
           "time": "18:15",
-          "description": "파르코 옆에서 지하상가로 들어가 남쪽 구간을 따라 이동",
+          "description": "Calvin Klein·PLAZA·靴下屋 등이 있는 지하 쇼핑 거리",
           "details": [
-            "매장 안을 15분 정도 보고 다음 구역으로 이동"
+            "상점가를 남쪽으로 지나며 관심 매장만 들르기",
+            "일반 상점 영업시간은 20:00까지"
           ],
-          "source": "https://www.tenchika.com/service/",
+          "source": "https://www.tenchika.com/shop/",
           "location": {
             "lat": 33.5894641,
             "lng": 130.4004635
@@ -272,11 +274,12 @@
           "category": "shopping",
           "name": "솔라리아 플라자",
           "time": "18:30",
-          "description": "지하상가 남쪽에서 이어지는 패션·잡화 매장 둘러보기",
+          "description": "BEAUTY&YOUTH·URBAN RESEARCH DOORS·X-girl·무인양품 등이 있는 쇼핑몰",
           "details": [
-            "매장 안을 15분 정도 보고 다음 구역으로 이동"
+            "스투시 19:00 마감에 맞춰 관심 매장만 빠르게 둘러보기",
+            "패션 매장 영업시간은 평일 20:00까지"
           ],
-          "source": "https://solariaplaza.com/",
+          "source": "https://www.solariaplaza.com/floor/category.html",
           "location": {
             "lat": 33.589345,
             "lng": 130.398733
@@ -330,11 +333,12 @@
           "id": "01-18",
           "category": "shopping",
           "name": "세컨드스트리트 후쿠오카 텐진점",
-          "time": "19:35",
-          "description": "21시까지 영업하는 중고 의류·브랜드 매장 둘러보기",
+          "time": "19:40",
+          "description": "브랜드 고정 입점이 아닌 중고 의류 매장; 남녀 의류·명품 의류 등 재고 수시 변동",
           "details": [
             "영업시간 11:00~21:00",
-            "15분 정도 매장 구경"
+            "20:30 무렵까지 여유롭게 둘러보기",
+            "브랜드별 재고는 방문 당일 매장에서 확인"
           ],
           "source": "https://www.2ndstreet.jp/shop/details?shopsId=30973",
           "location": {
@@ -350,12 +354,12 @@
           "id": "01-19",
           "category": "food",
           "name": "하카타 모츠나베 야마나카 아카사카점",
-          "time": "20:20",
-          "description": "텐진·다이묘 쇼핑 후 아카사카에서 모츠나베 저녁",
+          "time": "21:00",
+          "description": "21:00 예약 확정 · 텐진·다이묘 쇼핑 후 아카사카에서 모츠나베",
           "details": [
+            "예약 시간 21:00에 맞춰 20:30 무렵 세컨드스트리트에서 출발",
             "화~목 영업 16:00~23:00 (라스트오더 22:30)",
-            "예약 시 저녁 좌석은 2시간 기준",
-            "쇼핑 마감 후 걸어서 이동"
+            "예약 좌석은 21:00부터 2시간 기준"
           ],
           "source": "https://tabelog.com/fukuoka/A4001/A400104/40004383/",
           "location": {
@@ -371,15 +375,15 @@
           "id": "01-20",
           "category": "stay",
           "name": "호텔 복귀",
-          "time": "22:50",
-          "description": "저녁 식사 후 도보로 숙소 복귀",
+          "time": "23:40",
+          "description": "저녁 식사 후 아카사카에서 나카스카와바타 숙소까지 도보 복귀",
           "location": {
             "lat": 33.598,
             "lng": 130.4079
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "아카사카에서 숙소까지 도보 약 25분"
+            "label": "아카사카에서 숙소까지 도보 예상 30~40분 · 당일 경로 확인"
           }
         }
       ]

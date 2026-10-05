@@ -105,7 +105,7 @@ export class TripMap {
     }
     // Mobile uses the selected timeline card for details, keeping the map clear.
     if (window.matchMedia('(min-width: 901px)').matches) {
-      this.infoWindow.setContent(createInfoWindow(selected.stop, this.onSelectionClear));
+      this.infoWindow.setContent(createInfoWindow(selected.stop));
       this.infoWindow.open({ map: this.map, anchor: selected.marker });
     } else this.infoWindow.close();
   }

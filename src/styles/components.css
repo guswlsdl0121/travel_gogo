@@ -265,7 +265,7 @@
   font-size: 0.58rem;
   font-weight: 500;
 }
-.map-info { max-width: 220px; padding: 2px 1px; font-family: inherit; }
+.map-info { max-width: 220px; padding: 2px 22px 2px 1px; font-family: inherit; }
 .map-info span { display: block; margin-bottom: 3px; color: #6d746e; font-size: 0.65rem; font-weight: 700; }
 .map-info strong { display: block; font-size: 0.86rem; }
 .map-info p { margin-top: 5px; color: #626a64; font-size: 0.72rem; line-height: 1.45; }
@@ -284,7 +284,6 @@
 .gm-style-iw-ch { display: none !important; }
 .map-info a { display: inline-block; margin-top: 6px; color: #0b63ce; font-size: 0.75rem; }
 .map-info__context { margin-top: 6px; color: #4f5c55; }
-.map-info__close { float: right; min-width: 36px; min-height: 36px; border: 0; background: transparent; cursor: pointer; }
 .course-options { margin: 0 0 16px; border: 1px solid var(--border); border-radius: 8px; padding: 0 12px; }
 .course-options summary { min-height: 44px; padding: 13px 0; font-size: 0.78rem; font-weight: 650; cursor: pointer; }
 .course-options .plan-tabs { margin: 0 0 12px; }

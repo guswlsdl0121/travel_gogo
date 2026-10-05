@@ -9,16 +9,9 @@ export function createPin(number, color, name) {
   return pin;
 }
 
-export function createInfoWindow(stop, onClose) {
+export function createInfoWindow(stop) {
   const content = document.createElement("div");
   content.className = "map-info";
-  const close = document.createElement('button');
-  close.type = 'button';
-  close.className = 'map-info__close';
-  close.textContent = '×';
-  close.setAttribute('aria-label', '장소 설명 닫기');
-  close.addEventListener('click', onClose);
-  content.append(close);
   const id = document.createElement("span");
   id.textContent = stop.id;
   const title = document.createElement("strong");
