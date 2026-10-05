@@ -391,17 +391,17 @@
     {
       "id": "02",
       "date": "2026-10-07",
-      "title": "기타큐슈 아울렛·고쿠라 문화 산책과 캐널시티",
+      "title": "기타큐슈 아울렛·고쿠라·캐널시티",
       "area": "기타큐슈 스페이스월드 · 고쿠라 · 하카타",
       "color": "#32665c",
-      "summary": "오전에는 스페이스월드역 옆 아울렛을 둘러보고 점심을 먹습니다. 고쿠라역으로 이동해 기타큐슈 만화박물관, 고쿠라성, 고쿠라성 정원을 차례로 관람합니다. 하카타역으로 돌아온 뒤 캐널시티 Zone8의 진격의 거인 테마 공간과 갭을 둘러보고 저녁을 먹습니다.",
+      "summary": "호텔 1층에서 아침을 먹고 9시에 출발합니다. JR 실제 시각에 맞춰 스페이스월드 아울렛을 둘러본 뒤 고쿠라역에서 해산물 덮밥을 먹습니다. 만화박물관, 고쿠라성·정원과 旦過市場을 짧게 방문한 뒤 하카타로 돌아와 Zone8 진격의 거인 카페와 캐널 아쿠아 파노라마를 관람합니다.",
       "stops": [
         {
           "id": "02-01",
           "category": "stay",
           "name": "호텔 오리엔탈 익스프레스 나카스카와바타",
-          "time": "08:00",
-          "description": "하카타에서 JR로 기타큐슈 당일 이동",
+          "time": "09:00",
+          "description": "호텔 1층에서 아침 식사 후 출발",
           "details": [
             "10/6~10/8 · 2박"
           ],
@@ -415,7 +415,7 @@
           "id": "02-02",
           "category": "transport",
           "name": "나카스카와바타역",
-          "time": "08:10",
+          "time": "09:12",
           "description": "공항선 하카타 방면 탑승",
           "includeInBounds": false,
           "location": {
@@ -431,8 +431,8 @@
           "id": "02-03",
           "category": "train",
           "name": "하카타역",
-          "time": "08:25",
-          "description": "JR 가고시마 본선으로 스페이스월드역 이동",
+          "time": "09:16",
+          "description": "지하철 도착 후 JR 승강장으로 이동",
           "includeInBounds": false,
           "location": {
             "lat": 33.5902,
@@ -707,30 +707,30 @@
           "id": "02-20",
           "category": "transit",
           "name": "스페이스월드역",
-          "time": "09:40",
-          "description": "하카타에서 JR 가고시마 본선으로 이동",
+          "time": "10:33",
+          "description": "하카타 09:28 출발 구간쾌속으로 도착",
           "details": [
-            "직통·환승 및 열차별 소요 시간은 당일 시간표 확인"
+            "10:37 출발 · 아울렛까지 도보 약 5분"
           ],
-          "source": "https://www.jrkyushu.co.jp/railway/station/1191639_1601.html",
+          "source": "https://www.jrkyushu-timetable.jp/sp/2610/0021/00213601.html?d=20261007&t=2828301l",
           "location": {
             "lat": 33.8710982,
             "lng": 130.8059894
           },
           "routeFromPrevious": {
             "mode": "transit",
-            "label": "JR 가고시마 본선 직통 약 1시간 10분"
+            "label": "JR 가고시마 본선 구간쾌속"
           }
         },
         {
           "id": "02-21",
           "category": "shopping",
           "name": "THE OUTLETS KITAKYUSHU",
-          "time": "10:00",
-          "description": "오전부터 점심 무렵까지 아울렛 쇼핑",
+          "time": "10:45",
+          "description": "스페이스월드역 옆 아울렛 쇼핑",
           "details": [
-            "매장 10:00~20:00",
-            "11:30 무렵 푸드 포레스트에서 점심 후 이동"
+            "매장 영업 10:00~20:00",
+            "12:20까지 관람 후 역으로 이동"
           ],
           "source": "https://the-outlets-kitakyushu.aeonmall.com/static-pages/hours",
           "location": {
@@ -746,12 +746,12 @@
           "id": "02-22",
           "category": "transit",
           "name": "스페이스월드역",
-          "time": "12:10",
-          "description": "점심을 마치고 고쿠라 방면 JR 탑승",
+          "time": "12:37",
+          "description": "12:37 고쿠라 방면 JR 구간쾌속 탑승",
           "details": [
-            "열차 대기 시간은 당일 시간표 확인"
+            "고쿠라 12:50 도착 · 매일 운전"
           ],
-          "source": "https://www.jrkyushu.co.jp/railway/station/1191639_1601.html",
+          "source": "https://www.jrkyushu-timetable.jp/sp/2610/0026/00263601.html?d=20261007&t=2926800",
           "location": {
             "lat": 33.8710982,
             "lng": 130.8059894
@@ -765,12 +765,12 @@
           "id": "02-23",
           "category": "transit",
           "name": "고쿠라역",
-          "time": "12:40",
-          "description": "북쪽 출구로 나와 아루아루City의 만화박물관으로 이동",
+          "time": "12:50",
+          "description": "스페이스월드역 12:37 출발 JR로 고쿠라역 도착",
           "details": [
-            "스페이스월드역에서 JR로 약 15분"
+            "스페이스월드역 12:37 출발 · 고쿠라역 12:50 도착"
           ],
-          "source": "https://www.jrkyushu.co.jp/railway/station/1191639_1601.html",
+          "source": "https://www.jrkyushu-timetable.jp/sp/2610/0026/00263601.html?d=20261007&t=2926800",
           "location": {
             "lat": 33.886923,
             "lng": 130.883181
@@ -784,8 +784,8 @@
           "id": "02-24",
           "category": "place",
           "name": "기타큐슈 만화박물관",
-          "time": "12:50",
-          "description": "아루아루City 5·6층에서 상설 전시와 열람 공간 관람",
+          "time": "14:00",
+          "description": "아루아루City 5·6층 상설 전시와 열람 공간 관람",
           "details": [
             "11:00~19:00 · 최종 입장 18:30",
             "고쿠라역 북쪽 출구에서 도보 이동"
@@ -804,10 +804,11 @@
           "id": "02-25",
           "category": "place",
           "name": "고쿠라성",
-          "time": "14:20",
-          "description": "천수각 전시 관람 후 바로 옆 정원으로 이동",
+          "time": "15:00",
+          "description": "천수각 전시 관람",
           "details": [
-            "4~10월 9:00~20:00, 최종 입장 19:30"
+            "4~10월 통상 9:00~20:00 · 최종 입장 19:30",
+            "관람 약 40분 후 정원으로 이동"
           ],
           "source": "https://kokura-castle.jp/schedule/",
           "location": {
@@ -824,10 +825,10 @@
           "category": "place",
           "name": "고쿠라성 정원",
           "time": "15:40",
-          "description": "성 옆 일본 정원을 산책하고 전시관 관람",
+          "description": "성 옆 일본 정원 산책과 전시관 관람",
           "details": [
-            "고쿠라성과 정원 통합권 선택 가능",
-            "특별 행사에 따른 운영 시간은 당일 재확인"
+            "정원은 통상 4~10월 9:00~18:00",
+            "고쿠라성·정원 운영시간은 행사 일정에 따라 달라질 수 있음"
           ],
           "source": "https://kokura-castle.jp/schedule/",
           "location": {
@@ -843,12 +844,13 @@
           "id": "02-27",
           "category": "transit",
           "name": "고쿠라역",
-          "time": "16:50",
-          "description": "고쿠라성 정원에서 역으로 돌아와 하카타행 JR 탑승",
+          "time": "17:13",
+          "description": "17:13 구간쾌속 하카타행 탑승",
           "details": [
-            "고쿠라~하카타 열차 시각·소요 시간은 당일 확인"
+            "고쿠라 17:13 출발 · 하카타 18:21 도착",
+            "매일 운전 · JR 2026년 10월 시간표"
           ],
-          "source": "https://www.jrkyushu.co.jp/railway/",
+          "source": "https://www.jrkyushu-timetable.jp/sp/2610/0021/00213003.html?d=20261007&t=2815502l",
           "location": {
             "lat": 33.886923,
             "lng": 130.883181
@@ -862,8 +864,8 @@
           "id": "02-28",
           "category": "place",
           "name": "Zone8 진격의 거인 테마 카페·굿즈",
-          "time": "18:45",
-          "description": "캐널시티 이스트빌 2층 굿즈와 3층 진격의 거인 테마 카페 방문",
+          "time": "18:50",
+          "description": "캐널시티 이스트빌 2층 굿즈와 3층 테마 카페 관람",
           "details": [
             "Zone8 출입구는 이스트빌 2층 · 3층 카페 11:00~21:00",
             "카페 이용 시 메뉴 1개 이상 구매, 60분 이용 · 방문 전 이용 방식 확인",
