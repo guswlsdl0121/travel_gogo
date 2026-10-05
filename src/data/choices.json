@@ -450,5 +450,39 @@
         }
       }
     ]
+  },
+  "01-14": {
+    "label": "텐진 쇼핑 후 저녁 식사",
+    "default": "ooyama-tenjin",
+    "options": [
+      {
+        "id": "ooyama-tenjin",
+        "name": "모츠나베 오오야마 후쿠오카 파르코점",
+        "description": "파르코 본관 지하 1층 · 예약 가능 · 23시까지 영업 안내",
+        "tags": [
+          "모츠나베",
+          "텐진"
+        ],
+        "source": "https://tabelog.com/fukuoka/A4001/A400103/40058975/",
+        "location": {
+          "lat": 33.590839,
+          "lng": 130.398587
+        }
+      },
+      {
+        "id": "torikawa-daijin-tenjin",
+        "name": "하카타 도리카와 다이진 텐진 구시보",
+        "description": "ONE FUKUOKA BLDG. 지하 1층 · 예약 불가 · 23시까지 영업",
+        "tags": [
+          "야키토리",
+          "텐진"
+        ],
+        "source": "https://tabelog.com/fukuoka/A4001/A400103/40070458/",
+        "location": {
+          "lat": 33.59095,
+          "lng": 130.39979
+        }
+      }
+    ]
   }
 }
