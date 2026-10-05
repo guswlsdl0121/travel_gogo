@@ -391,10 +391,10 @@
     {
       "id": "02",
       "date": "2026-10-07",
-      "title": "기타큐슈 아울렛과 고쿠라 산책",
+      "title": "기타큐슈 아울렛·고쿠라 문화 산책과 캐널시티",
       "area": "기타큐슈 스페이스월드 · 고쿠라 · 하카타",
       "color": "#32665c",
-      "summary": "하카타에서 JR로 스페이스월드역까지 이동해 아울렛을 둘러보고, 오후에는 고쿠라의 旦過市場와 고쿠라성을 방문합니다. 하카타로 돌아와 시간이 남으면 캐널시티와 갭을 보고 저녁을 먹습니다.",
+      "summary": "오전에는 스페이스월드역 옆 아울렛을 둘러보고 점심을 먹습니다. 고쿠라역으로 이동해 기타큐슈 만화박물관, 고쿠라성, 고쿠라성 정원을 차례로 관람합니다. 하카타역으로 돌아온 뒤 캐널시티 Zone8의 진격의 거인 테마 공간과 갭을 둘러보고 저녁을 먹습니다.",
       "stops": [
         {
           "id": "02-01",
@@ -432,7 +432,7 @@
           "category": "train",
           "name": "하카타역",
           "time": "08:25",
-          "description": "JR鹿児島本線でスペースワールド駅へ",
+          "description": "JR 가고시마 본선으로 스페이스월드역 이동",
           "includeInBounds": false,
           "location": {
             "lat": 33.5902,
@@ -641,7 +641,7 @@
           "category": "train",
           "name": "하카타역",
           "time": "18:15",
-          "description": "공항선으로 환승",
+          "description": "고쿠라에서 JR로 돌아와 캐널시티로 이동",
           "includeInBounds": false,
           "location": {
             "lat": 33.5902,
@@ -649,7 +649,7 @@
           },
           "routeFromPrevious": {
             "mode": "transit",
-            "label": "小倉駅からJRで博多へ約1時間15分"
+            "label": "고쿠라역에서 하카타역까지 JR · 열차에 따라 소요 시간 상이"
           }
         },
         {
@@ -657,22 +657,22 @@
           "category": "place",
           "name": "캐널시티 하카타",
           "time": "18:35",
-          "description": "하카타역에서 걸어와 쇼핑·휴식",
+          "description": "하카타역에서 이동해 이스트빌 Zone8부터 방문",
           "location": {
             "lat": 33.5898,
             "lng": 130.4107
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "博多駅からキャナルシティまで徒歩約15分"
+            "label": "하카타역에서 캐널시티까지 도보 · 여유 있게 이동"
           }
         },
         {
           "id": "02-18",
           "category": "shopping",
           "name": "갭 캐널시티 하카타",
-          "time": "18:50",
-          "description": "캐널시티 사우스빌딩 1층 매장",
+          "time": "19:50",
+          "description": "Zone8 관람 뒤 캐널시티 사우스빌딩 1층 매장 구경",
           "source": "https://www.gap.co.jp/stores/?storeID=3639",
           "location": {
             "lat": 33.589568,
@@ -680,18 +680,18 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "キャナルシティ館内移動"
+            "label": "이스트빌에서 사우스빌딩으로 관내 이동"
           }
         },
         {
           "id": "02-19",
           "category": "food",
           "name": "하카타 야키토리 저녁",
-          "time": "20:00",
-          "description": "キャナルシティ・ギャップの後にハカタ・中洲エリアで夕食",
+          "time": "20:20",
+          "description": "캐널시티 관람 후 하카타·나카스 일대에서 저녁",
           "details": [
-            "焼き鳥・もつ鍋などから選択",
-            "夕食後は宿泊先へ徒歩で戻れるエリア"
+            "Zone8 카페에서 식사했다면 가볍게 조정",
+            "식사 후 숙소로 도보 복귀"
           ],
           "includeInBounds": false,
           "location": {
@@ -710,7 +710,7 @@
           "time": "09:40",
           "description": "하카타에서 JR 가고시마 본선으로 이동",
           "details": [
-            "하카타에서 직통 열차 약 1시간~1시간 30분 · 시간대별 차이"
+            "직통·환승 및 열차별 소요 시간은 당일 시간표 확인"
           ],
           "source": "https://www.jrkyushu.co.jp/railway/station/1191639_1601.html",
           "location": {
@@ -729,8 +729,8 @@
           "time": "10:00",
           "description": "오전부터 점심 무렵까지 아울렛 쇼핑",
           "details": [
-            "아울렛 매장 10:00~20:00",
-            "푸드 포레스트에서 점심 후 13시쯤 이동"
+            "매장 10:00~20:00",
+            "11:30 무렵 푸드 포레스트에서 점심 후 이동"
           ],
           "source": "https://the-outlets-kitakyushu.aeonmall.com/static-pages/hours",
           "location": {
@@ -746,8 +746,8 @@
           "id": "02-22",
           "category": "transit",
           "name": "스페이스월드역",
-          "time": "13:05",
-          "description": "고쿠라 방면 JR 열차 탑승",
+          "time": "12:10",
+          "description": "점심을 마치고 고쿠라 방면 JR 탑승",
           "details": [
             "열차 대기 시간은 당일 시간표 확인"
           ],
@@ -765,8 +765,8 @@
           "id": "02-23",
           "category": "transit",
           "name": "고쿠라역",
-          "time": "13:30",
-          "description": "JR로 고쿠라 중심부 이동",
+          "time": "12:40",
+          "description": "북쪽 출구로 나와 아루아루City의 만화박물관으로 이동",
           "details": [
             "스페이스월드역에서 JR로 약 15분"
           ],
@@ -783,29 +783,29 @@
         {
           "id": "02-24",
           "category": "place",
-          "name": "旦過市場",
-          "time": "13:50",
-          "description": "시장을 둘러보고 간식·현지 먹거리 구경",
+          "name": "기타큐슈 만화박물관",
+          "time": "12:50",
+          "description": "아루아루City 5·6층에서 상설 전시와 열람 공간 관람",
           "details": [
-            "일반 안내 10:00~18:00, 점포별 영업시간 상이",
-            "17시 전후 문을 닫는 점포가 많아 오후 일찍 방문"
+            "11:00~19:00 · 최종 입장 18:30",
+            "고쿠라역 북쪽 출구에서 도보 이동"
           ],
-          "source": "https://www.crossroadfukuoka.jp/spot/13182",
+          "source": "https://www.ktqmm.jp/about/access",
           "location": {
-            "lat": 33.881312,
-            "lng": 130.879448
+            "lat": 33.8875143,
+            "lng": 130.8847944
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "고쿠라역에서 도보 약 10분"
+            "label": "고쿠라역에서 아루아루City까지 도보"
           }
         },
         {
           "id": "02-25",
           "category": "place",
           "name": "고쿠라성",
-          "time": "15:15",
-          "description": "성 내부와 주변 정원을 관람",
+          "time": "14:20",
+          "description": "천수각 전시 관람 후 바로 옆 정원으로 이동",
           "details": [
             "4~10월 9:00~20:00, 최종 입장 19:30"
           ],
@@ -816,17 +816,37 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "旦過市場에서 도보 약 15분"
+            "label": "만화박물관에서 고쿠라성까지 도보 · 여유 있게 이동"
           }
         },
         {
           "id": "02-26",
+          "category": "place",
+          "name": "고쿠라성 정원",
+          "time": "15:40",
+          "description": "성 옆 일본 정원을 산책하고 전시관 관람",
+          "details": [
+            "고쿠라성과 정원 통합권 선택 가능",
+            "특별 행사에 따른 운영 시간은 당일 재확인"
+          ],
+          "source": "https://kokura-castle.jp/schedule/",
+          "location": {
+            "lat": 33.88441,
+            "lng": 130.87556
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "고쿠라성에서 정원까지 도보"
+          }
+        },
+        {
+          "id": "02-27",
           "category": "transit",
           "name": "고쿠라역",
-          "time": "17:00",
-          "description": "하카타 복귀 열차 탑승",
+          "time": "16:50",
+          "description": "고쿠라성 정원에서 역으로 돌아와 하카타행 JR 탑승",
           "details": [
-            "하카타까지 JR 약 1시간~1시간 20분"
+            "고쿠라~하카타 열차 시각·소요 시간은 당일 확인"
           ],
           "source": "https://www.jrkyushu.co.jp/railway/",
           "location": {
@@ -835,7 +855,29 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "고쿠라성에서 역까지 도보 약 20분"
+            "label": "고쿠라성 정원에서 고쿠라역까지 도보"
+          }
+        },
+        {
+          "id": "02-28",
+          "category": "place",
+          "name": "Zone8 진격의 거인 테마 카페·굿즈",
+          "time": "18:45",
+          "description": "캐널시티 이스트빌 2층 굿즈와 3층 진격의 거인 테마 카페 방문",
+          "details": [
+            "Zone8 출입구는 이스트빌 2층 · 3층 카페 11:00~21:00",
+            "카페 이용 시 메뉴 1개 이상 구매, 60분 이용 · 방문 전 이용 방식 확인",
+            "1층 이머시브 영상은 진격의 거인이 아니라 블루록 콘텐츠"
+          ],
+          "source": "https://canalcity.co.jp/shop/detail/11000304?tenant_id=11000304",
+          "location": {
+            "lat": 33.5898,
+            "lng": 130.4107
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "캐널시티 이스트빌 2층 입구로 관내 이동",
+            "draw": false
           }
         }
       ]
