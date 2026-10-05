@@ -10,20 +10,20 @@
     {
       "id": "01",
       "date": "2026-10-06",
-      "title": "하카타의 첫인상",
-      "area": "나카스카와바타 · 하카타 구시가지",
+      "title": "하카타 첫날과 쇼핑",
+      "area": "하카타역 · 나카스 · 캐널시티 · 텐진",
       "color": "#a44734",
-      "summary": "도착일에는 숙소 주변의 전통 상점가와 대표 명소를 걷고, 이치란 본점과 야간 쇼핑으로 마무리합니다.",
+      "summary": "오전 도착 후 하카타역에서 지역 명물로 점심을 먹고, 단톤·갭·몽벨을 들릅니다. 숙소 체크인과 구시가지 산책, 나카스 저녁도 이어갑니다.",
       "stops": [
         {
           "id": "01-01",
           "category": "flight",
           "name": "후쿠오카 공항 국제선",
-          "time": "13:40",
-          "description": "LJ263 도착 후 입국 수속",
+          "time": "11:30",
+          "description": "LJ273 도착 후 입국 수속",
           "details": [
-            "인천 12:15 출발",
-            "발권 완료"
+            "인천 09:40 출발",
+            "변경된 항공권 기준"
           ],
           "location": {
             "lat": 33.5859,
@@ -34,7 +34,7 @@
           "id": "01-02",
           "category": "transport",
           "name": "국제선 셔틀 정류장",
-          "time": "14:35",
+          "time": "12:15",
           "description": "국내선·지하철 방면 무료 셔틀 탑승",
           "location": {
             "lat": 33.5855,
@@ -49,7 +49,7 @@
           "id": "01-03",
           "category": "transport",
           "name": "후쿠오카 공항 국내선",
-          "time": "14:50",
+          "time": "12:30",
           "description": "무료 셔틀 하차",
           "location": {
             "lat": 33.5971,
@@ -57,14 +57,14 @@
           },
           "routeFromPrevious": {
             "mode": "driving",
-            "label": "공항 무료 셔틀 · 약 10분"
+            "label": "공항 무료 셔틀"
           }
         },
         {
           "id": "01-04",
           "category": "transport",
           "name": "후쿠오카공항역",
-          "time": "15:00",
+          "time": "12:40",
           "description": "공항선 지하철 탑승",
           "location": {
             "lat": 33.5973,
@@ -72,29 +72,67 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "국내선 1층에서 지하철 개찰구"
+            "label": "국내선에서 지하철 개찰구로 이동"
           }
         },
         {
           "id": "01-05",
           "category": "transport",
-          "name": "나카스카와바타역",
-          "time": "15:15",
-          "description": "7번 출구 방면 하차",
+          "name": "하카타역",
+          "time": "13:00",
+          "description": "점심·단톤 방문을 위해 하차",
           "location": {
-            "lat": 33.5947,
-            "lng": 130.4066
+            "lat": 33.5902,
+            "lng": 130.4207
           },
           "routeFromPrevious": {
             "mode": "transit",
-            "label": "공항선 · 약 10분"
+            "label": "공항선으로 하카타역 이동"
           }
         },
         {
           "id": "01-06",
+          "category": "food",
+          "name": "멘타이 요리 하카타 쇼보안",
+          "time": "13:10",
+          "description": "명란과 도미 차즈케를 즐기는 하카타역 점심",
+          "details": [
+            "JR하카타시티 구우텐 9층",
+            "대기가 길면 점심 선택지 변경"
+          ],
+          "source": "https://www.kayanoya.com/shop/gohanya-syoubouan/",
+          "location": {
+            "lat": 33.5902478,
+            "lng": 130.4183588
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "역 건물 안 이동",
+            "draw": false
+          }
+        },
+        {
+          "id": "01-07",
+          "category": "shopping",
+          "name": "단톤 후쿠오카",
+          "time": "14:10",
+          "description": "JR하카타시티 4층 직영점",
+          "source": "https://danton.com/ja-jp/pages/shop",
+          "location": {
+            "lat": 33.5892521,
+            "lng": 130.4190278
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "JR하카타시티 안 이동",
+            "draw": false
+          }
+        },
+        {
+          "id": "01-08",
           "category": "stay",
           "name": "호텔 오리엔탈 익스프레스 나카스카와바타",
-          "time": "15:30",
+          "time": "15:00",
           "description": "체크인과 짐 정리",
           "details": [
             "예약 확정 · 10/6~10/8 · 2박"
@@ -104,15 +142,15 @@
             "lng": 130.4079
           },
           "routeFromPrevious": {
-            "mode": "walking",
-            "label": "역에서 도보 약 5분"
+            "mode": "transit",
+            "label": "하카타역에서 나카스카와바타역으로 이동 후 도보"
           }
         },
         {
-          "id": "01-07",
+          "id": "01-09",
           "category": "food",
           "name": "스즈카케 하카타 본점",
-          "time": "16:20",
+          "time": "15:40",
           "description": "제철 화과자와 차",
           "details": [
             "찻집 주문 마감 18:30"
@@ -123,14 +161,14 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "도보 약 5분"
+            "label": "숙소에서 도보"
           }
         },
         {
-          "id": "01-08",
+          "id": "01-10",
           "category": "shopping",
           "name": "카와바타 상점가",
-          "time": "17:10",
+          "time": "16:20",
           "description": "전통 상점과 하카타 기념품",
           "location": {
             "lat": 33.5955,
@@ -138,14 +176,14 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "도보 약 3분"
+            "label": "상점가로 도보"
           }
         },
         {
-          "id": "01-09",
+          "id": "01-11",
           "category": "place",
           "name": "구시다 신사",
-          "time": "17:40",
+          "time": "16:50",
           "description": "장식 야마카사와 경내 관람",
           "location": {
             "lat": 33.5929,
@@ -153,14 +191,14 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "상점가를 따라 도보 약 7분"
+            "label": "상점가를 따라 도보"
           }
         },
         {
-          "id": "01-10",
+          "id": "01-12",
           "category": "place",
           "name": "캐널시티 하카타",
-          "time": "18:20",
+          "time": "17:20",
           "description": "분수와 건축 공간 관람",
           "location": {
             "lat": 33.5898,
@@ -168,11 +206,44 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "도보 약 6분"
+            "label": "캐널시티로 도보"
           }
         },
         {
-          "id": "01-11",
+          "id": "01-13",
+          "category": "shopping",
+          "name": "갭 캐널시티 하카타",
+          "time": "17:40",
+          "description": "캐널시티 사우스빌딩 1층 매장",
+          "source": "https://www.gap.co.jp/stores/?storeID=3639",
+          "location": {
+            "lat": 33.589568,
+            "lng": 130.411763
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "캐널시티 건물 안 이동",
+            "draw": false
+          }
+        },
+        {
+          "id": "01-14",
+          "category": "shopping",
+          "name": "몽벨 후쿠오카 텐진점",
+          "time": "18:30",
+          "description": "텐진의 몽벨 매장에서 의류·아웃도어 용품 보기",
+          "source": "https://store.montbell.jp/search/shopinfo/?shop_no=618936",
+          "location": {
+            "lat": 33.5877938,
+            "lng": 130.3984352
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "텐진 방면 지하철·도보"
+          }
+        },
+        {
+          "id": "01-15",
           "category": "food",
           "name": "이치란 본사 총본점",
           "time": "19:30",
@@ -186,11 +257,11 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "나카강 방향 실제 도보 경로"
+            "label": "텐진에서 나카스 방향 도보"
           }
         },
         {
-          "id": "01-12",
+          "id": "01-16",
           "category": "shopping",
           "name": "돈키호테 나카스점",
           "time": "20:30",
@@ -201,7 +272,7 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "도보 약 2분"
+            "label": "나카스 안 도보"
           }
         }
       ]
