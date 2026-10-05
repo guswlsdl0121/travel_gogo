@@ -1,0 +1,77 @@
+/* On phones, the map stays visible while the itinerary scrolls independently. */
+@media (max-width: 900px) {
+  body { height: 100vh; height: 100dvh; overflow: hidden; }
+  .app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: max(10px, env(safe-area-inset-top)) max(10px, env(safe-area-inset-right)) 0 max(10px, env(safe-area-inset-left));
+  }
+  .trip-header { flex: 0 0 auto; align-items: center; gap: 8px; padding: 0 2px 10px; }
+  .trip-header__title span { margin-bottom: 3px; font-size: 0.6rem; }
+  .trip-header h1 { font-size: 1.2rem; }
+  .trip-header p { flex-shrink: 0; font-size: 0.62rem; line-height: 1.5; text-align: right; white-space: nowrap; }
+  .day-tabs { flex: 0 0 auto; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .day-tab { min-width: 0; min-height: 46px; flex-direction: column; gap: 3px; padding: 5px 2px; }
+  .day-tab__number { font-size: 0.6rem; }
+  .day-tab__date { font-size: 0.73rem; }
+  .workspace {
+    flex: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 43fr) minmax(0, 57fr);
+    height: auto;
+    min-height: 0;
+    margin-top: 8px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: none;
+  }
+  .workspace.is-map-expanded { grid-template-rows: minmax(0, 65fr) minmax(0, 35fr); }
+  .map-panel { min-height: 0; border-right: 0; border-bottom: 1px solid var(--border); }
+  .map-toolbar { top: 8px; right: 8px; left: 8px; gap: 5px; padding: 4px; border-radius: 7px; }
+  .map-toolbar > span { display: none; }
+  .map-toolbar__actions { width: 100%; gap: 4px; flex-wrap: wrap; }
+  .map-toolbar__actions > div { display: contents; }
+  .map-toolbar button { flex: 1; min-height: 36px; white-space: nowrap; font-size: 0.65rem; padding: 6px; }
+  #map-size-toggle { display: block; }
+  .map-legend { bottom: 25px; left: 8px; right: auto; gap: 5px 8px; padding: 5px 7px; font-size: 0.6rem; box-shadow: none; }
+  .map-legend small { display: none; }
+  .map-legend i { width: 12px; }
+  .itinerary-panel { min-height: 0; overflow-y: auto; overscroll-behavior-y: contain; padding: 14px 12px max(20px, env(safe-area-inset-bottom)); scroll-behavior: smooth; }
+  .day-heading { align-items: center; gap: 10px; }
+  .day-heading > div > span { display: none; }
+  .day-heading h2 { font-size: 1.05rem; line-height: 1.4; }
+  .day-heading time { font-size: 0.65rem; }
+  .day-summary { margin: 7px 0 12px; font-size: 0.73rem; line-height: 1.6; }
+  .course-options { margin-bottom: 12px; padding: 0 10px; }
+  .course-options summary { font-size: 0.73rem; }
+  .plan-tabs { gap: 5px; }
+  .plan-tab { min-height: 38px; padding: 6px 8px; font-size: 0.67rem; }
+  .choice-control { grid-template-columns: 76px minmax(0, 1fr); gap: 6px; }
+  .choice-control__label { font-size: 0.67rem; overflow-wrap: anywhere; }
+  .choice-control__trigger { font-size: 0.72rem; line-height: 1.4; }
+  .choice-control__option { font-size: 0.72rem; }
+  .choice-control__list { position: static; margin-top: 4px; box-shadow: none; max-height: 220px; }
+  .timeline-hint { font-size: 0.67rem; }
+  .stop__button { grid-template-columns: 27px minmax(0, 1fr); gap: 8px; padding: 10px 6px; min-height: 56px; }
+  .stop__sequence { width: 25px; height: 25px; font-size: 0.66rem; }
+  .stop__id { display: none; }
+  .stop__name { font-size: 0.8rem; }
+  .stop__time { font-size: 0.69rem; }
+  .stop__header { gap: 8px; }
+  .stop__description { font-size: 0.72rem; margin-top: 3px; }
+  .stop__details { display: none; font-size: 0.73rem; }
+  .stop.is-active .stop__details { display: block; }
+  .transfer { min-height: 19px; padding-left: 18px; }
+  .transfer__line { height: 16px; }
+  .transfer__label { font-size: 0.64rem; }
+  .app-error { flex: 0 0 auto; max-height: 90px; overflow-y: auto; }
+}
+
+/* Landscape phones keep useful height by putting the map beside the list. */
+@media (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+  .trip-header { display: none; }
+  .day-tab { flex-direction: row; min-height: 40px; gap: 6px; }
+  .workspace, .workspace.is-map-expanded { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); }
+  #map-size-toggle { display: none; }
+}

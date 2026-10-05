@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f4f5f3" />
+    <meta name="description" content="2026년 10월 6일부터 10일까지, 후쿠오카와 유후인 4박 5일 여행 지도" />
+    <title>후쿠오카 · 유후인 여행</title>
+    <link rel="stylesheet" href="./src/styles/app.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="app-error" id="app-error" role="alert" hidden></div>
+
+      <header class="trip-header">
+        <div class="trip-header__title">
+          <span id="trip-label">FUKUOKA 2026</span>
+          <h1 id="trip-title">후쿠오카 · 유후인</h1>
+        </div>
+        <p id="trip-period">10.06 — 10.10 · 4박 5일</p>
+      </header>
+
+      <nav class="day-tabs" id="day-tabs" aria-label="여행 날짜"></nav>
+
+      <main class="workspace">
+        <section class="map-panel" aria-label="일자별 여행 지도">
+          <div id="map" class="map"></div>
+          <div class="map-fallback" id="map-fallback" hidden>
+            <strong>지도를 불러오지 못했습니다.</strong>
+            <span>일정은 아래에서 계속 확인할 수 있습니다.</span>
+          </div>
+          <div class="map-toolbar">
+            <span id="map-area">후쿠오카 · 하카타</span>
+            <div class="map-toolbar__actions">
+              <div id="map-focus-actions"></div>
+              <button id="fit-map" type="button">전체 보기</button>
+              <button id="map-size-toggle" type="button" aria-pressed="false">지도 넓게</button>
+            </div>
+          </div>
+          <div class="map-legend" aria-label="이동 경로 색상">
+            <span style="--route-color:#27343d"><i></i>도보</span>
+            <span style="--route-color:#075bd4"><i></i>대중교통</span>
+            <span style="--route-color:#f36b08"><i></i>자전거</span>
+            <span style="--route-color:#7624d6"><i></i>차량</span>
+            <small>도보·자전거는 현장 표지와 통행 규칙 우선</small>
+          </div>
+        </section>
+
+        <section class="itinerary-panel" aria-labelledby="day-title">
+          <div class="day-heading">
+            <div>
+              <span id="day-number">DAY 01</span>
+              <h2 id="day-title">후쿠오카 도착</h2>
+            </div>
+            <time id="day-date">10월 6일 화요일</time>
+          </div>
+          <p class="day-summary" id="day-summary"></p>
+          <details class="course-options">
+            <summary>코스 · 식당 변경</summary>
+            <nav class="plan-tabs" id="plan-tabs" aria-label="대체 일정 선택"></nav>
+            <div class="choice-controls" id="choice-controls" aria-label="장소 대안 선택"></div>
+          </details>
+          <p class="timeline-hint">장소를 누르면 지도와 상세 설명을 함께 볼 수 있어요.</p>
+          <div class="timeline" id="timeline"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./config.local.js"></script>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

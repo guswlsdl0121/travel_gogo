@@ -1,0 +1,454 @@
+{
+  "01-07": {
+    "label": "도착 후 디저트",
+    "default": "suzukake",
+    "options": [
+      {
+        "id": "suzukake",
+        "name": "스즈카케 하카타 본점",
+        "description": "화과자와 계절 디저트",
+        "tags": [
+          "화과자",
+          "기념품"
+        ],
+        "source": "https://www.suzukake.co.jp/",
+        "location": {
+          "lat": 33.5968,
+          "lng": 130.4069
+        }
+      },
+      {
+        "id": "manu-coffee",
+        "name": "MANU COFFEE 春吉店",
+        "description": "하카타 도착 후 커피와 디저트",
+        "tags": [
+          "커피",
+          "카페"
+        ],
+        "source": "https://manucoffee.com/",
+        "location": {
+          "lat": 33.5907,
+          "lng": 130.4075
+        }
+      },
+      {
+        "id": "cafedel-sol",
+        "name": "Café del SOL",
+        "description": "팬케이크와 가벼운 디저트",
+        "tags": [
+          "팬케이크",
+          "카페"
+        ],
+        "source": "https://www.cafedelsol.jp/",
+        "location": {
+          "lat": 33.5917,
+          "lng": 130.4018
+        }
+      }
+    ]
+  },
+  "01-11": {
+    "label": "첫날 저녁",
+    "default": "ichiran-main",
+    "options": [
+      {
+        "id": "ichiran-main",
+        "name": "이치란 본사 총본점",
+        "description": "후쿠오카 첫날 대표 라멘",
+        "tags": [
+          "라멘",
+          "관광"
+        ],
+        "source": "https://ichiran.com/shop/kyushu/sohonten.html",
+        "location": {
+          "lat": 33.5948,
+          "lng": 130.4065
+        }
+      },
+      {
+        "id": "shinshin",
+        "name": "하카타 라멘 신신",
+        "description": "대기 상황에 따라 대체하기 좋은 라멘",
+        "tags": [
+          "라멘",
+          "하카타"
+        ],
+        "source": "https://ra-men-shinshin.com/",
+        "location": {
+          "lat": 33.5906,
+          "lng": 130.4008
+        }
+      },
+      {
+        "id": "hakata-issou",
+        "name": "하카타 잇소우",
+        "description": "진한 돈코츠 라멘 선택지",
+        "tags": [
+          "라멘",
+          "돈코츠"
+        ],
+        "source": "https://www.hakata-issou.com/",
+        "location": {
+          "lat": 33.5839,
+          "lng": 130.4253
+        }
+      },
+      {
+        "id": "yatai-nakasu",
+        "name": "나카스 포장마차 거리",
+        "description": "라멘 대신 야타이 여러 메뉴",
+        "tags": [
+          "야타이",
+          "현지식"
+        ],
+        "source": "https://www.gofukuoka.jp/yatai.html",
+        "location": {
+          "lat": 33.5933,
+          "lng": 130.4052
+        }
+      }
+    ]
+  },
+  "02-10": {
+    "label": "미야지다케 간식",
+    "default": "matsugae-mochi",
+    "options": [
+      {
+        "id": "matsugae-mochi",
+        "name": "마쓰가에모치 본점",
+        "description": "신사 참배 뒤 먹는 후쿠쓰 명물 떡",
+        "tags": [
+          "명물",
+          "간식"
+        ],
+        "source": "https://fukutsukankou.com/",
+        "location": {
+          "lat": 33.7786,
+          "lng": 130.4875
+        }
+      },
+      {
+        "id": "monzen-cafe",
+        "name": "미야지다케 몬젠마치 식당",
+        "description": "떡 대신 간단한 식사를 선택할 때의 신사 앞 후보",
+        "tags": [
+          "일본식",
+          "신사"
+        ],
+        "source": "https://fukutsukankou.com/",
+        "location": {
+          "lat": 33.7772,
+          "lng": 130.4865
+        }
+      }
+    ]
+  },
+  "02-12": {
+    "label": "쓰야자키 점심",
+    "default": "sora-to-umi",
+    "options": [
+      {
+        "id": "sora-to-umi",
+        "name": "쓰야자키 어항식당 소라토우미",
+        "description": "쓰야자키 어항의 해산물 덮밥과 생선 요리",
+        "tags": [
+          "해산물",
+          "어항식당"
+        ],
+        "source": "https://fukutsukankou.com/つやざき漁港食堂　空と海/",
+        "location": {
+          "lat": 33.7855,
+          "lng": 130.4684
+        }
+      },
+      {
+        "id": "tsuyazaki-terrace",
+        "name": "쓰야자키 테라스",
+        "description": "해산물 대신 콩고기와 건강식 메뉴로 바꾸는 선택지",
+        "tags": [
+          "카페",
+          "대체식"
+        ],
+        "source": "https://fukutsukankou.com/津屋崎テラス/",
+        "location": {
+          "lat": 33.7867,
+          "lng": 130.4691
+        }
+      }
+    ]
+  },
+  "02-17": {
+    "label": "후쿠오카 저녁",
+    "default": "torikawa-daijin",
+    "options": [
+      {
+        "id": "torikawa-daijin",
+        "name": "도리카와 다이진 텐진점",
+        "description": "후쿠오카식 닭껍질 꼬치와 가벼운 저녁",
+        "tags": [
+          "야키토리",
+          "텐진"
+        ],
+        "source": "https://hakata-torikawa.com/shop/",
+        "location": {
+          "lat": 33.5906,
+          "lng": 130.4008
+        }
+      },
+      {
+        "id": "ooyama",
+        "name": "모츠나베 오오야마 KITTE 하카타",
+        "description": "야키토리 대신 하카타역 모츠나베로 전환",
+        "tags": [
+          "모츠나베",
+          "예약"
+        ],
+        "source": "https://www.motu-ooyama.com/shop/kittehakata/",
+        "location": {
+          "lat": 33.5898,
+          "lng": 130.4199
+        }
+      },
+      {
+        "id": "hakata-yatai",
+        "name": "하카타 야타이",
+        "description": "여러 포장마차 중 현장 선택",
+        "tags": [
+          "야타이",
+          "현지식"
+        ],
+        "source": "https://www.gofukuoka.jp/yatai.html",
+        "location": {
+          "lat": 33.5916,
+          "lng": 130.4053
+        }
+      }
+    ]
+  },
+  "03-05": {
+    "label": "유후인행 전 점심",
+    "default": "daifuku-udon",
+    "options": [
+      {
+        "id": "daifuku-udon",
+        "name": "다이후쿠 우동 하카타 1번가점",
+        "description": "열차 탑승 전 빠르게 먹는 우엉튀김 우동",
+        "tags": [
+          "우동",
+          "역세권"
+        ],
+        "source": "https://www.hakata-daifuku.com/groupshop/",
+        "location": {
+          "lat": 33.5898,
+          "lng": 130.4206
+        }
+      },
+      {
+        "id": "daichi-no-udon",
+        "name": "다이치노 우동 하카타점",
+        "description": "역 안에서 빠르게 먹는 우엉튀김 우동 대안",
+        "tags": [
+          "우동",
+          "역세권"
+        ],
+        "source": "https://daichinoudon.com/",
+        "location": {
+          "lat": 33.5895,
+          "lng": 130.4196
+        }
+      },
+      {
+        "id": "hakata-station-sushi",
+        "name": "하카타역 초밥 식당",
+        "description": "열차 전 부담 적은 초밥",
+        "tags": [
+          "초밥",
+          "하카타역"
+        ],
+        "source": "https://www.jrhakatacity.com/",
+        "location": {
+          "lat": 33.5897,
+          "lng": 130.4201
+        }
+      }
+    ]
+  },
+  "04-06": {
+    "label": "유후인 점심",
+    "default": "yufuin-soba-koki",
+    "options": [
+      {
+        "id": "yufuin-soba-koki",
+        "name": "소바도코로 코우키(清美堂)",
+        "description": "석물로 간 메밀과 오이타 도리텐",
+        "tags": [
+          "소바",
+          "도리텐"
+        ],
+        "source": "https://yufuin.gr.jp/spot/spot-1166/",
+        "location": {
+          "lat": 33.2668,
+          "lng": 131.3642
+        }
+      },
+      {
+        "id": "kinrinko-cafe",
+        "name": "긴린코 호수 카페",
+        "description": "소바가 부담스러울 때 호수 근처에서 가볍게 식사",
+        "tags": [
+          "카페",
+          "호수"
+        ],
+        "source": "https://www.yufuin.gr.jp/",
+        "location": {
+          "lat": 33.2636,
+          "lng": 131.3684
+        }
+      }
+    ]
+  },
+  "04-08": {
+    "label": "유후인 디저트",
+    "default": "b-speak",
+    "options": [
+      {
+        "id": "b-speak",
+        "name": "B-speak",
+        "description": "예약·품절 여부를 확인할 대표 롤케이크",
+        "tags": [
+          "롤케이크",
+          "예약"
+        ],
+        "source": "https://www.b-speak.net/",
+        "location": {
+          "lat": 33.2634,
+          "lng": 131.3602
+        }
+      },
+      {
+        "id": "snoopy-chaya",
+        "name": "SNOOPY茶屋 由布院",
+        "description": "캐릭터 디저트와 기념품",
+        "tags": [
+          "디저트",
+          "기념품"
+        ],
+        "source": "https://www.snoopychaya.jp/",
+        "location": {
+          "lat": 33.2631,
+          "lng": 131.3617
+        }
+      },
+      {
+        "id": "yufuin-floral-village",
+        "name": "유후인 플로랄 빌리지 카페",
+        "description": "거리 산책 중 바로 바꿀 수 있는 선택지",
+        "tags": [
+          "카페",
+          "산책"
+        ],
+        "source": "https://www.yufuin-flower-village.com/",
+        "location": {
+          "lat": 33.2637,
+          "lng": 131.3625
+        }
+      }
+    ]
+  },
+  "04-12": {
+    "label": "하카타 귀환 저녁",
+    "default": "ooyama",
+    "options": [
+      {
+        "id": "ooyama",
+        "name": "모츠나베 오오야마 KITTE 하카타",
+        "description": "숙소와 가까운 대표 선택",
+        "tags": [
+          "모츠나베",
+          "하카타역"
+        ],
+        "source": "https://www.motu-ooyama.com/",
+        "location": {
+          "lat": 33.5898,
+          "lng": 130.4199
+        }
+      },
+      {
+        "id": "motsunabe-yamanaka",
+        "name": "모츠나베 야마나카",
+        "description": "예약 가능할 때 선택",
+        "tags": [
+          "모츠나베",
+          "예약"
+        ],
+        "source": "https://motsunabe-yamanaka.com/",
+        "location": {
+          "lat": 33.5808,
+          "lng": 130.4028
+        }
+      },
+      {
+        "id": "kitte-dining",
+        "name": "KITTE 하카타 식당가",
+        "description": "대기 상황에 따라 현장 선택",
+        "tags": [
+          "쇼핑몰",
+          "식당가"
+        ],
+        "source": "https://hakata.jp-kitte.jp/",
+        "location": {
+          "lat": 33.5898,
+          "lng": 130.4199
+        }
+      }
+    ]
+  },
+  "05-02": {
+    "label": "출국 전 브런치",
+    "default": "dacomecca",
+    "options": [
+      {
+        "id": "dacomecca",
+        "name": "DACOMECCA",
+        "description": "숙소 근처 로컬 베이커리",
+        "tags": [
+          "베이커리",
+          "브런치"
+        ],
+        "source": "https://dacomecca.com/",
+        "location": {
+          "lat": 33.5872,
+          "lng": 130.4188
+        }
+      },
+      {
+        "id": "painstock",
+        "name": "Pain Stock",
+        "description": "빵을 포장해 공항으로 이동",
+        "tags": [
+          "베이커리",
+          "테이크아웃"
+        ],
+        "source": "https://www.painstock.jp/",
+        "location": {
+          "lat": 33.5917,
+          "lng": 130.4099
+        }
+      },
+      {
+        "id": "station-bakery",
+        "name": "하카타역 베이커리 카페",
+        "description": "공항 이동 직전 역에서 해결",
+        "tags": [
+          "베이커리",
+          "역세권"
+        ],
+        "source": "https://www.jrhakatacity.com/",
+        "location": {
+          "lat": 33.5897,
+          "lng": 130.4202
+        }
+      }
+    ]
+  }
+}

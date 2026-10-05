@@ -1,0 +1,1050 @@
+{
+  "trip": {
+    "title": "후쿠오카 · 후쿠쓰 · 유후인",
+    "label": "FUKUOKA 2026",
+    "startDate": "2026-10-06",
+    "endDate": "2026-10-10",
+    "duration": "4박 5일"
+  },
+  "days": [
+    {
+      "id": "01",
+      "date": "2026-10-06",
+      "title": "하카타의 첫인상",
+      "area": "나카스카와바타 · 하카타 구시가지",
+      "color": "#a44734",
+      "summary": "도착일에는 숙소 주변의 전통 상점가와 대표 명소를 걷고, 이치란 본점과 야간 쇼핑으로 마무리합니다.",
+      "stops": [
+        {
+          "id": "01-01",
+          "category": "flight",
+          "name": "후쿠오카 공항 국제선",
+          "time": "13:40",
+          "description": "LJ263 도착 후 입국 수속",
+          "details": [
+            "인천 12:15 출발",
+            "발권 완료"
+          ],
+          "location": {
+            "lat": 33.5859,
+            "lng": 130.4507
+          }
+        },
+        {
+          "id": "01-02",
+          "category": "transport",
+          "name": "국제선 셔틀 정류장",
+          "time": "14:35",
+          "description": "국내선·지하철 방면 무료 셔틀 탑승",
+          "location": {
+            "lat": 33.5855,
+            "lng": 130.4513
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "입국장에서 정류장까지 도보"
+          }
+        },
+        {
+          "id": "01-03",
+          "category": "transport",
+          "name": "후쿠오카 공항 국내선",
+          "time": "14:50",
+          "description": "무료 셔틀 하차",
+          "location": {
+            "lat": 33.5971,
+            "lng": 130.4478
+          },
+          "routeFromPrevious": {
+            "mode": "driving",
+            "label": "공항 무료 셔틀 · 약 10분"
+          }
+        },
+        {
+          "id": "01-04",
+          "category": "transport",
+          "name": "후쿠오카공항역",
+          "time": "15:00",
+          "description": "공항선 지하철 탑승",
+          "location": {
+            "lat": 33.5973,
+            "lng": 130.4481
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "국내선 1층에서 지하철 개찰구"
+          }
+        },
+        {
+          "id": "01-05",
+          "category": "transport",
+          "name": "나카스카와바타역",
+          "time": "15:15",
+          "description": "7번 출구 방면 하차",
+          "location": {
+            "lat": 33.5947,
+            "lng": 130.4066
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "공항선 · 약 10분"
+          }
+        },
+        {
+          "id": "01-06",
+          "category": "stay",
+          "name": "호텔 오리엔탈 익스프레스 나카스카와바타",
+          "time": "15:30",
+          "description": "체크인과 짐 정리",
+          "details": [
+            "예약 확정 · 10/6~10/8 · 2박"
+          ],
+          "location": {
+            "lat": 33.598,
+            "lng": 130.4079
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "역에서 도보 약 5분"
+          }
+        },
+        {
+          "id": "01-07",
+          "category": "food",
+          "name": "스즈카케 하카타 본점",
+          "time": "16:20",
+          "description": "제철 화과자와 차",
+          "details": [
+            "찻집 주문 마감 18:30"
+          ],
+          "location": {
+            "lat": 33.5968,
+            "lng": 130.4069
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "도보 약 5분"
+          }
+        },
+        {
+          "id": "01-08",
+          "category": "shopping",
+          "name": "카와바타 상점가",
+          "time": "17:10",
+          "description": "전통 상점과 하카타 기념품",
+          "location": {
+            "lat": 33.5955,
+            "lng": 130.4077
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "도보 약 3분"
+          }
+        },
+        {
+          "id": "01-09",
+          "category": "place",
+          "name": "구시다 신사",
+          "time": "17:40",
+          "description": "장식 야마카사와 경내 관람",
+          "location": {
+            "lat": 33.5929,
+            "lng": 130.4106
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "상점가를 따라 도보 약 7분"
+          }
+        },
+        {
+          "id": "01-10",
+          "category": "place",
+          "name": "캐널시티 하카타",
+          "time": "18:20",
+          "description": "분수와 건축 공간 관람",
+          "location": {
+            "lat": 33.5898,
+            "lng": 130.4107
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "도보 약 6분"
+          }
+        },
+        {
+          "id": "01-11",
+          "category": "food",
+          "name": "이치란 본사 총본점",
+          "time": "19:30",
+          "description": "돈코츠 라멘 저녁",
+          "details": [
+            "현재 24시간 영업"
+          ],
+          "location": {
+            "lat": 33.5948,
+            "lng": 130.4065
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "나카강 방향 실제 도보 경로"
+          }
+        },
+        {
+          "id": "01-12",
+          "category": "shopping",
+          "name": "돈키호테 나카스점",
+          "time": "20:30",
+          "description": "생활용품과 1차 기념품 쇼핑",
+          "location": {
+            "lat": 33.5943,
+            "lng": 130.4061
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "도보 약 2분"
+          }
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "date": "2026-10-07",
+      "title": "후쿠쓰 바닷마을 자전거",
+      "area": "후쿠마 · 미야지다케 · 쓰야자키",
+      "color": "#32665c",
+      "summary": "쓰야자키 옛 거리와 미야지다케 신사를 둘러본 뒤 어항 해산물, 해변을 연결하는 10km 이내 자전거 코스입니다.",
+      "stops": [
+        {
+          "id": "02-01",
+          "category": "stay",
+          "name": "호텔 오리엔탈 익스프레스 나카스카와바타",
+          "time": "07:50",
+          "description": "예약 확정 숙소에서 후쿠마로 출발",
+          "details": [
+            "10/6~10/8 · 2박"
+          ],
+          "includeInBounds": false,
+          "location": {
+            "lat": 33.598,
+            "lng": 130.4079
+          }
+        },
+        {
+          "id": "02-02",
+          "category": "transport",
+          "name": "나카스카와바타역",
+          "time": "08:00",
+          "description": "공항선 하카타 방면 탑승",
+          "includeInBounds": false,
+          "location": {
+            "lat": 33.5947,
+            "lng": 130.4066
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "숙소에서 역까지 도보"
+          }
+        },
+        {
+          "id": "02-03",
+          "category": "train",
+          "name": "하카타역",
+          "time": "08:15",
+          "description": "JR 가고시마 본선 환승",
+          "includeInBounds": false,
+          "location": {
+            "lat": 33.5902,
+            "lng": 130.4207
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "공항선 2정거장"
+          }
+        },
+        {
+          "id": "02-04",
+          "category": "train",
+          "name": "후쿠마역",
+          "time": "09:10",
+          "description": "서일본철도 버스로 환승",
+          "location": {
+            "lat": 33.7633,
+            "lng": 130.4861
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "JR 가고시마 본선"
+          }
+        },
+        {
+          "id": "02-05",
+          "category": "transport",
+          "name": "쓰야자키센겐 버스정류장",
+          "time": "09:35",
+          "description": "나고미 대여소 앞 하차",
+          "location": {
+            "lat": 33.7859,
+            "lng": 130.4733
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "노선버스 실제 경로"
+          }
+        },
+        {
+          "id": "02-06",
+          "category": "transport",
+          "name": "쓰야자키센겐 나고미",
+          "time": "09:40",
+          "description": "당일 접수 후 자전거 대여",
+          "details": [
+            "일반 8대 · 전기 2대",
+            "사전예약 불가"
+          ],
+          "location": {
+            "lat": 33.7866,
+            "lng": 130.4722
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "정류장에서 도보"
+          }
+        },
+        {
+          "id": "02-07",
+          "category": "place",
+          "name": "쓰야자키센겐 · 아이노이에",
+          "time": "10:00",
+          "description": "옛 상가와 항구 골목 산책",
+          "location": {
+            "lat": 33.7861,
+            "lng": 130.4707
+          },
+          "routeFromPrevious": {
+            "mode": "bicycling",
+            "label": "자전거 약 0.5km"
+          }
+        },
+        {
+          "id": "02-08",
+          "category": "transport",
+          "name": "미야지다케 신사 자전거 주차",
+          "time": "10:55",
+          "description": "자전거를 세우고 참배",
+          "location": {
+            "lat": 33.7774,
+            "lng": 130.4868
+          },
+          "routeFromPrevious": {
+            "mode": "bicycling",
+            "label": "해안 안쪽 도로 약 3km"
+          }
+        },
+        {
+          "id": "02-09",
+          "category": "place",
+          "name": "미야지다케 신사",
+          "time": "11:10",
+          "description": "큰 시메나와와 광명의 길 조망",
+          "location": {
+            "lat": 33.7792,
+            "lng": 130.4883
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "참배길 계단 도보"
+          }
+        },
+        {
+          "id": "02-10",
+          "category": "food",
+          "name": "마쓰가에모치 본점",
+          "time": "10:50",
+          "description": "미야지다케 신사 참배 뒤 후쿠쓰 명물 떡 간식",
+          "details": [
+            "구운 찹쌀떡"
+          ],
+          "location": {
+            "lat": 33.7772,
+            "lng": 130.4865
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "참배길을 따라 내려오기"
+          }
+        },
+        {
+          "id": "02-11",
+          "category": "place",
+          "name": "미야지하마 해변",
+          "time": "12:40",
+          "description": "바다 풍경과 자전거 휴식",
+          "location": {
+            "lat": 33.7781,
+            "lng": 130.4702
+          },
+          "routeFromPrevious": {
+            "mode": "bicycling",
+            "label": "해변 방면 자전거 약 2km"
+          }
+        },
+        {
+          "id": "02-12",
+          "category": "food",
+          "name": "쓰야자키 어항식당 소라토우미",
+          "time": "11:20",
+          "description": "자전거 코스 중간에 먹는 해산물 덮밥과 생선 요리",
+          "details": [
+            "후보: 아지도코로 우미샨",
+            "전날 영업 확인"
+          ],
+          "location": {
+            "lat": 33.7855,
+            "lng": 130.4684
+          },
+          "routeFromPrevious": {
+            "mode": "bicycling",
+            "label": "쓰야자키 어항까지 자전거 약 2.5km"
+          }
+        },
+        {
+          "id": "02-13",
+          "category": "transport",
+          "name": "쓰야자키센겐 나고미",
+          "time": "13:10",
+          "description": "식사 후 해변을 거쳐 대여소로 복귀",
+          "location": {
+            "lat": 33.7866,
+            "lng": 130.4722
+          },
+          "routeFromPrevious": {
+            "mode": "bicycling",
+            "label": "미야지하마를 거쳐 대여소로 약 3km"
+          }
+        },
+        {
+          "id": "02-14",
+          "category": "transport",
+          "name": "쓰야자키센겐 버스정류장",
+          "time": "15:20",
+          "description": "후쿠마역행 버스 탑승",
+          "location": {
+            "lat": 33.7859,
+            "lng": 130.4733
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "대여소에서 도보",
+            "draw": false
+          }
+        },
+        {
+          "id": "02-15",
+          "category": "train",
+          "name": "후쿠마역",
+          "time": "15:55",
+          "description": "하카타행 JR 탑승",
+          "location": {
+            "lat": 33.7633,
+            "lng": 130.4861
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "복귀 동선 · 지도선 생략",
+            "draw": false
+          }
+        },
+        {
+          "id": "02-16",
+          "category": "train",
+          "name": "하카타역",
+          "time": "16:45",
+          "description": "공항선으로 환승",
+          "includeInBounds": false,
+          "location": {
+            "lat": 33.5902,
+            "lng": 130.4207
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "복귀 동선 · 지도선 생략",
+            "draw": false
+          }
+        },
+        {
+          "id": "02-17",
+          "category": "food",
+          "name": "하카타 야키토리 저녁",
+          "time": "18:30",
+          "description": "닭껍질 꼬치와 채소말이",
+          "details": [
+            "모든 복귀 지점은 마커로 표시"
+          ],
+          "includeInBounds": false,
+          "location": {
+            "lat": 33.5964,
+            "lng": 130.4075
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "숙소 권역 복귀 · 지도선 생략",
+            "draw": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "date": "2026-10-08",
+      "title": "하카타의 절과 유후인",
+      "area": "하카타 구시가지 · 유후인",
+      "color": "#8f603c",
+      "summary": "오전에는 하카타의 절과 발상지 이야기를 보고, 여유 있게 특급 유후에 탑승해 료칸으로 이동합니다.",
+      "stops": [
+        {
+          "id": "03-01",
+          "category": "stay",
+          "name": "호텔 오리엔탈 익스프레스 나카스카와바타",
+          "time": "07:50",
+          "description": "체크아웃 후 짐을 가지고 하카타역으로 이동",
+          "details": [
+            "예약 확정 · 10/6~10/8 · 2박"
+          ],
+          "location": {
+            "lat": 33.598,
+            "lng": 130.4079
+          }
+        },
+        {
+          "id": "03-02",
+          "category": "transport",
+          "name": "하카타역 코인락커 · 큰 짐 보관",
+          "time": "08:30",
+          "description": "큰 짐은 후쿠오카에 두고 유후인에는 1박용 가방만 가져가기",
+          "details": [
+            "하카타역 지하철 락커 · 소형 ¥500 / 중형 ¥700 / 대형 ¥900 / 특대형 ¥1,200 · 1일 기준",
+            "다음 날 회수 시 2일분 예상: 대형 ¥1,800 / 특대형 ¥2,400",
+            "무료 대안: 비아 인에 체크인 전날 보관 가능 여부 사전 확인"
+          ],
+          "source": "https://www.nishitetsu.ne.jp/nss/coin_locker/english.html",
+          "location": {
+            "lat": 33.5903,
+            "lng": 130.4209
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "나카스카와바타역에서 지하철 · 하카타역 하차"
+          }
+        },
+        {
+          "id": "03-03",
+          "category": "place",
+          "name": "조텐지 · 하카타 천년문",
+          "time": "09:05",
+          "description": "우동·소바·만주 발상지",
+          "location": {
+            "lat": 33.5959,
+            "lng": 130.419
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "하카타역에서 천년문까지 도보"
+          }
+        },
+        {
+          "id": "03-04",
+          "category": "place",
+          "name": "도초지",
+          "time": "09:40",
+          "description": "오층탑과 후쿠오카 대불",
+          "location": {
+            "lat": 33.5954,
+            "lng": 130.4145
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "조텐지에서 도초지까지 구시가지 도보"
+          }
+        },
+        {
+          "id": "03-05",
+          "category": "food",
+          "name": "다이후쿠 우동 하카타 1번가점",
+          "time": "10:35",
+          "description": "하카타 우동으로 이른 점심",
+          "location": {
+            "lat": 33.5898,
+            "lng": 130.4206
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "도초지에서 하카타역까지 도보"
+          }
+        },
+        {
+          "id": "03-06",
+          "category": "train",
+          "name": "하카타역 승강장",
+          "time": "11:45",
+          "description": "특급 유후 3호 탑승 준비",
+          "details": [
+            "12:14 출발",
+            "2호차 5번 C·D",
+            "예약번호 69843"
+          ],
+          "location": {
+            "lat": 33.5903,
+            "lng": 130.4209
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "역 구내 이동"
+          }
+        },
+        {
+          "id": "03-07",
+          "category": "train",
+          "name": "유후인역",
+          "time": "14:39",
+          "description": "특급 유후 3호 도착",
+          "location": {
+            "lat": 33.2621,
+            "lng": 131.3556
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "특급 유후 3호 · 2시간 25분"
+          }
+        },
+        {
+          "id": "03-08",
+          "category": "stay",
+          "name": "오야도 이치젠",
+          "time": "15:30",
+          "description": "택시 이동 후 체크인",
+          "details": [
+            "후쿠오카에는 큰 짐 보관 · 유후인에는 1박용 가방만 지참"
+          ],
+          "location": {
+            "lat": 33.2734749,
+            "lng": 131.3667759
+          },
+          "routeFromPrevious": {
+            "mode": "driving",
+            "label": "유후인역에서 택시 약 5분"
+          }
+        },
+        {
+          "id": "03-09",
+          "category": "place",
+          "name": "붓산지(선택)",
+          "time": "16:30",
+          "description": "료칸의 온천과 휴식을 우선하고 체력이 남을 때만 산책",
+          "location": {
+            "lat": 33.2649,
+            "lng": 131.3705
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "료칸에서 실제 도보 경로"
+          }
+        },
+        {
+          "id": "03-10",
+          "category": "food",
+          "name": "오야도 이치젠 석식",
+          "time": "18:30",
+          "description": "가이세키와 온천",
+          "details": [
+            "석식 포함 여부 확인"
+          ],
+          "location": {
+            "lat": 33.2734749,
+            "lng": 131.3667759
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "료칸 복귀 · 지도선 생략",
+            "draw": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "date": "2026-10-09",
+      "title": "유후인의 자연과 미술",
+      "area": "긴린코 · 유노츠보 · 하카타역",
+      "color": "#756640",
+      "summary": "료칸의 아침을 여유 있게 즐긴 뒤 긴린코·유노쓰보·미술관을 한 방향으로 걷고, 저녁에 하카타로 돌아옵니다.",
+      "stops": [
+        {
+          "id": "04-01",
+          "category": "stay",
+          "name": "오야도 이치젠",
+          "time": "08:00",
+          "description": "료칸 아침과 온천을 즐긴 뒤 체크아웃 준비",
+          "location": {
+            "lat": 33.2734749,
+            "lng": 131.3667759
+          }
+        },
+        {
+          "id": "04-02",
+          "category": "place",
+          "name": "긴린코 호수",
+          "time": "09:30",
+          "description": "체크아웃 후 긴린코와 호수 주변 산책",
+          "location": {
+            "lat": 33.2669,
+            "lng": 131.3682
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "실제 도보 경로"
+          }
+        },
+        {
+          "id": "04-03",
+          "category": "food",
+          "name": "오야도 이치젠 체크아웃",
+          "time": "10:00",
+          "description": "짐을 들고 유후인 중심으로 이동",
+          "details": [
+            "조식 포함 여부 확인"
+          ],
+          "location": {
+            "lat": 33.2734749,
+            "lng": 131.3667759
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "조식 복귀 · 지도선 생략",
+            "draw": false
+          }
+        },
+        {
+          "id": "04-04",
+          "category": "stay",
+          "name": "오야도 이치젠 체크아웃",
+          "time": "10:20",
+          "description": "1박용 가방만 챙겨 유노츠보 거리로 출발",
+          "details": [
+            "큰 짐은 하카타역에 보관 중"
+          ],
+          "location": {
+            "lat": 33.2734749,
+            "lng": 131.3667759
+          }
+        },
+        {
+          "id": "04-05",
+          "category": "shopping",
+          "name": "유노츠보 거리",
+          "time": "10:30",
+          "description": "공예품과 유후인 기념품",
+          "location": {
+            "lat": 33.2683,
+            "lng": 131.3606
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "도보 약 18분"
+          }
+        },
+        {
+          "id": "04-06",
+          "category": "food",
+          "name": "소바도코로 코우키(清美堂)",
+          "time": "11:40",
+          "description": "소바와 오이타 도리텐 점심",
+          "location": {
+            "lat": 33.2668,
+            "lng": 131.3642
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "거리 안쪽 도보"
+          }
+        },
+        {
+          "id": "04-07",
+          "category": "place",
+          "name": "COMICO ART MUSEUM YUFUIN",
+          "time": "13:00",
+          "description": "건축과 현대미술 관람",
+          "details": [
+            "시간 지정 사전예약 권장",
+            "이어폰 지참"
+          ],
+          "location": {
+            "lat": 33.2647,
+            "lng": 131.3612
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "도보 약 8분"
+          }
+        },
+        {
+          "id": "04-08",
+          "category": "food",
+          "name": "B-speak",
+          "time": "14:30",
+          "description": "P롤 디저트",
+          "location": {
+            "lat": 33.2634,
+            "lng": 131.3602
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "도보 약 5분"
+          }
+        },
+        {
+          "id": "04-09",
+          "category": "train",
+          "name": "유후인역",
+          "time": "16:30",
+          "description": "열차 탑승 준비",
+          "details": [
+            "17:17 출발",
+            "5호차 14번 A·B"
+          ],
+          "location": {
+            "lat": 33.2621,
+            "lng": 131.3556
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "실제 도보 경로"
+          }
+        },
+        {
+          "id": "04-10",
+          "category": "train",
+          "name": "하카타역",
+          "time": "19:27",
+          "description": "유후인노모리 6호 도착 후 코인락커에서 큰 짐 수령",
+          "details": [
+            "보관 시작 다음 날 회수 · 사용 일수만큼 추가 결제"
+          ],
+          "location": {
+            "lat": 33.5902,
+            "lng": 130.4207
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "특급 유후인노모리 6호"
+          }
+        },
+        {
+          "id": "04-11",
+          "category": "stay",
+          "name": "VIA INN 하카타구치 에키마에",
+          "time": "19:45",
+          "description": "체크인",
+          "details": [
+            "예약 확정 · 10/9~10/10 · 1박"
+          ],
+          "location": {
+            "lat": 33.5892,
+            "lng": 130.4187
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "하카타역에서 도보"
+          }
+        },
+        {
+          "id": "04-12",
+          "category": "food",
+          "name": "모츠나베 오오야마 KITTE 하카타",
+          "time": "20:30",
+          "description": "하카타역에서 가까운 모츠나베 저녁, 도착 후 여유 있게 식사",
+          "details": [
+            "예약 권장"
+          ],
+          "location": {
+            "lat": 33.5898,
+            "lng": 130.4199
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "숙소에서 도보"
+          }
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "date": "2026-10-10",
+      "title": "정원과 시장, 귀국",
+      "area": "하카타역 · 스미요시 · 후쿠오카 공항",
+      "color": "#4f617a",
+      "summary": "마지막 날은 하카타역 남쪽의 빵집, 신사와 일본정원, 재래시장만 짧게 둘러보고 국제선으로 이동합니다.",
+      "stops": [
+        {
+          "id": "05-01",
+          "category": "stay",
+          "name": "VIA INN 하카타구치 에키마에",
+          "time": "07:20",
+          "description": "체크아웃 후 짐을 프런트에 맡기고 출발",
+          "details": [
+            "예약 확정 · 10/9~10/10 · 1박",
+            "투숙객 체크아웃 당일 보관 · 무료 이용 예정"
+          ],
+          "source": "https://www.viainn.com/en/hakata-h/faq/",
+          "location": {
+            "lat": 33.5892,
+            "lng": 130.4187
+          }
+        },
+        {
+          "id": "05-02",
+          "category": "food",
+          "name": "DACOMECCA",
+          "time": "07:30",
+          "description": "로컬 베이커리 브런치",
+          "location": {
+            "lat": 33.5872,
+            "lng": 130.4188
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "숙소에서 도보"
+          }
+        },
+        {
+          "id": "05-03",
+          "category": "place",
+          "name": "스미요시 신사",
+          "time": "08:30",
+          "description": "숲이 있는 경내 산책",
+          "location": {
+            "lat": 33.5866,
+            "lng": 130.4157
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "도보 약 8분"
+          }
+        },
+        {
+          "id": "05-04",
+          "category": "place",
+          "name": "라쿠스이엔",
+          "time": "09:00",
+          "description": "연못과 다실이 있는 일본정원",
+          "location": {
+            "lat": 33.5869,
+            "lng": 130.4148
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "도보 약 1분"
+          }
+        },
+        {
+          "id": "05-05",
+          "category": "shopping",
+          "name": "야나기바시 연합시장",
+          "time": "10:00",
+          "description": "달걀말이와 과일 등 가벼운 간식",
+          "location": {
+            "lat": 33.5836,
+            "lng": 130.4078
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "도보 약 12분"
+          }
+        },
+        {
+          "id": "05-06",
+          "category": "transport",
+          "name": "VIA INN 프런트 · 짐 수령",
+          "time": "10:55",
+          "description": "호텔에서 맡긴 짐을 찾아 하카타역으로 이동",
+          "details": [
+            "호텔 보관료 ¥0 예정 · 체크아웃 때 재확인",
+            "대안: 하카타역 지하철 락커 ¥500·¥700·¥900·¥1,200"
+          ],
+          "source": "https://www.viainn.com/en/hakata-h/faq/",
+          "location": {
+            "lat": 33.5892,
+            "lng": 130.4187
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "야나기바시 시장에서 호텔까지 도보"
+          }
+        },
+        {
+          "id": "05-07",
+          "category": "transport",
+          "name": "하카타역 공항선 승강장",
+          "time": "11:15",
+          "description": "공항선 탑승",
+          "location": {
+            "lat": 33.5902,
+            "lng": 130.4207
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "호텔에서 하카타역까지 도보 약 4분"
+          }
+        },
+        {
+          "id": "05-08",
+          "category": "transport",
+          "name": "후쿠오카공항역",
+          "time": "11:35",
+          "description": "국내선 터미널 도착",
+          "location": {
+            "lat": 33.5973,
+            "lng": 130.4481
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "공항선 실제 경로"
+          }
+        },
+        {
+          "id": "05-09",
+          "category": "transport",
+          "name": "국내선 셔틀 정류장",
+          "time": "11:45",
+          "description": "국제선 무료 셔틀 탑승",
+          "location": {
+            "lat": 33.5971,
+            "lng": 130.4478
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "공항역에서 국내선 1층"
+          }
+        },
+        {
+          "id": "05-10",
+          "category": "flight",
+          "name": "후쿠오카 공항 국제선",
+          "time": "12:10",
+          "description": "체크인과 출국 수속",
+          "details": [
+            "LJ264 · 14:40 출발",
+            "인천 16:00 도착"
+          ],
+          "location": {
+            "lat": 33.5859,
+            "lng": 130.4507
+          },
+          "routeFromPrevious": {
+            "mode": "driving",
+            "label": "공항 무료 셔틀 · 약 10분"
+          }
+        }
+      ]
+    }
+  ]
+}

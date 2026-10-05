@@ -1,0 +1,27 @@
+:root {
+  --background: #f4f5f3;
+  --surface: #ffffff;
+  --surface-muted: #f7f8f6;
+  --text: #1e2420;
+  --text-muted: #687069;
+  --border: #dfe3df;
+  --accent: #b64e3a;
+  --shadow: 0 10px 28px rgba(27, 37, 31, 0.07);
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+  color: var(--text);
+  background: var(--background);
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; min-height: 100vh; overflow-x: hidden; background: var(--background); }
+button { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button, summary { touch-action: manipulation; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+}
+h1, h2, p { margin: 0; }
+[hidden] { display: none !important; }
