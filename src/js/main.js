@@ -1,6 +1,6 @@
 import { loadTripData } from './data/load.js';
 import { resolveDayPlan } from './data/resolve.js';
-import { TripMap } from './map/trip-map.js';
+import { TripMap } from './map/trip-map.js?v=popup-close-2';
 import { DeviceLocation } from './location/device-location.js';
 import { TripView } from './ui/trip-view.js';
 import { closeChoiceMenus } from './ui/choices.js';

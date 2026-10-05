@@ -1,5 +1,5 @@
 import { loadGoogleMaps } from './load.js';
-import { createPin, createInfoWindow } from './presentation.js';
+import { createPin, createInfoWindow } from './presentation.js?v=popup-close-2';
 import { getRouteColor, getTravelMode, createRouteCacheKey, readCachedPath, writeCachedPath } from './routes.js';
 import { UserLocationLayer } from './user-location-layer.js';
 
