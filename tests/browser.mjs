@@ -20,6 +20,16 @@ try {
     const mapBefore = await page.locator('#map').boundingBox();
     const zoomBefore = await page.evaluate(() => window.__maps.zoom);
     if (width <= 900 && height > 500) {
+      const toggle = page.locator('#map-tools-toggle');
+      assert.equal(await toggle.getAttribute('aria-expanded'), 'false');
+      assert.equal(await page.locator('#map-tools-actions').isVisible(), false);
+      await toggle.click();
+      assert.equal(await page.locator('#map-tools-actions').isVisible(), true);
+      await page.locator('#map-size-toggle').click();
+      assert.ok((await page.locator('#map').boundingBox()).height > mapBefore.height);
+      assert.equal(await toggle.getAttribute('aria-expanded'), 'false');
+      await toggle.click();
+      await page.locator('#map-size-toggle').click();
       const mapPanel = await page.locator('.map-panel').boundingBox();
       const itinerary = await page.locator('.itinerary-panel').boundingBox();
       assert.ok(itinerary.y - (mapPanel.y + mapPanel.height) >= 7);
@@ -30,7 +40,8 @@ try {
     await trigger.click();
     await page.locator('.choice-control__option.is-selected').first().click();
     assert.equal(await page.locator('.stop.is-active').count(), 1);
-    assert.equal(await page.evaluate(() => window.__maps.zoom), zoomBefore);
+    const selectedZoom = width <= 900 ? Math.max(zoomBefore, 15) : zoomBefore;
+    assert.equal(await page.evaluate(() => window.__maps.zoom), selectedZoom);
     assert.equal(await page.evaluate(() => Math.max(...window.__maps.markers.filter((marker) => marker.map).map((marker) => marker.zIndex))), 1000000);
     const requestsBefore = await page.evaluate(() => window.__maps.requests);
     const fitsBefore = await page.evaluate(() => window.__maps.fits);
@@ -43,7 +54,7 @@ try {
     await page.locator('.choice-control__list:not([hidden]) .choice-control__option').nth(1).click();
     await page.waitForTimeout(80);
     assert.equal(await page.evaluate(() => window.__maps.fits), fitsBefore);
-    assert.equal(await page.evaluate(() => window.__maps.zoom), zoomBefore);
+    assert.equal(await page.evaluate(() => window.__maps.zoom), selectedZoom);
     if (width <= 900) {
       assert.equal(await page.evaluate(() => window.__maps.infoOpen), false);
       const mapAfter = await page.locator('#map').boundingBox();

@@ -57,6 +57,7 @@
 .map-toolbar span { font-size: 0.76rem; font-weight: 700; }
 .map-toolbar__actions { display: flex; gap: 6px; }
 .map-toolbar__actions > div { display: flex; gap: 6px; }
+.map-toolbar__toggle { display: none; }
 .map-toolbar button {
   padding: 6px 9px;
   border: 1px solid var(--border);

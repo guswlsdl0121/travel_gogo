@@ -97,6 +97,9 @@ export class TripMap {
     if (!selected) return;
     if (shouldPan) {
       this.map.panTo(selected.stop.location);
+      if (window.matchMedia('(max-width: 900px)').matches && this.map.getZoom() < 15) {
+        this.map.setZoom(15);
+      }
     }
     // Mobile uses the selected timeline card for details, keeping the map clear.
     if (window.matchMedia('(min-width: 901px)').matches) {
