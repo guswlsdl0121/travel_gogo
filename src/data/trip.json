@@ -10,10 +10,10 @@
     {
       "id": "01",
       "date": "2026-10-06",
-      "title": "하카타 첫날과 쇼핑",
-      "area": "하카타역 · 나카스 · 캐널시티 · 텐진",
+      "title": "후쿠오카 도착과 텐진 쇼핑",
+      "area": "후쿠오카 공항 · 하카타 · 나카스 · 텐진",
       "color": "#a44734",
-      "summary": "오전 도착 후 공항 국내선에서 점심을 먹고 하카타역 단톤에 들른 다음 15시부터 숙소에 체크인합니다. 이후 구시가지 산책과 갭·몽벨 쇼핑, 나카스 저녁을 이어갑니다.",
+      "summary": "공항에서 점심을 먹고 하카타역 단톤에 들른 뒤 숙소에 체크인합니다. 이치란 저녁 후 텐진에서 마감이 빠른 매장부터 쇼핑하고, 나카스 야식 후 숙소로 돌아갑니다.",
       "stops": [
         {
           "id": "01-01",
@@ -154,107 +154,12 @@
         {
           "id": "01-09",
           "category": "food",
-          "name": "스즈카케 하카타 본점",
-          "time": "15:40",
-          "description": "제철 화과자와 차",
-          "details": [
-            "찻집 주문 마감 18:30"
-          ],
-          "location": {
-            "lat": 33.5968,
-            "lng": 130.4069
-          },
-          "routeFromPrevious": {
-            "mode": "walking",
-            "label": "숙소에서 도보"
-          }
-        },
-        {
-          "id": "01-10",
-          "category": "shopping",
-          "name": "카와바타 상점가",
-          "time": "16:20",
-          "description": "전통 상점과 하카타 기념품",
-          "location": {
-            "lat": 33.5955,
-            "lng": 130.4077
-          },
-          "routeFromPrevious": {
-            "mode": "walking",
-            "label": "상점가로 도보"
-          }
-        },
-        {
-          "id": "01-11",
-          "category": "place",
-          "name": "구시다 신사",
-          "time": "16:50",
-          "description": "장식 야마카사와 경내 관람",
-          "location": {
-            "lat": 33.5929,
-            "lng": 130.4106
-          },
-          "routeFromPrevious": {
-            "mode": "walking",
-            "label": "상점가를 따라 도보"
-          }
-        },
-        {
-          "id": "01-12",
-          "category": "place",
-          "name": "캐널시티 하카타",
-          "time": "17:20",
-          "description": "분수와 건축 공간 관람",
-          "location": {
-            "lat": 33.5898,
-            "lng": 130.4107
-          },
-          "routeFromPrevious": {
-            "mode": "walking",
-            "label": "캐널시티로 도보"
-          }
-        },
-        {
-          "id": "01-13",
-          "category": "shopping",
-          "name": "갭 캐널시티 하카타",
-          "time": "17:40",
-          "description": "캐널시티 사우스빌딩 1층 매장",
-          "source": "https://www.gap.co.jp/stores/?storeID=3639",
-          "location": {
-            "lat": 33.589568,
-            "lng": 130.411763
-          },
-          "routeFromPrevious": {
-            "mode": "walking",
-            "label": "캐널시티 건물 안 이동",
-            "draw": false
-          }
-        },
-        {
-          "id": "01-14",
-          "category": "shopping",
-          "name": "몽벨 후쿠오카 텐진점",
-          "time": "18:30",
-          "description": "텐진의 몽벨 매장에서 의류·아웃도어 용품 보기",
-          "source": "https://store.montbell.jp/search/shopinfo/?shop_no=618936",
-          "location": {
-            "lat": 33.5877938,
-            "lng": 130.3984352
-          },
-          "routeFromPrevious": {
-            "mode": "transit",
-            "label": "텐진 방면 지하철·도보"
-          }
-        },
-        {
-          "id": "01-15",
-          "category": "food",
           "name": "이치란 본사 총본점",
-          "time": "19:30",
-          "description": "돈코츠 라멘 저녁",
+          "time": "16:30",
+          "description": "텐진 쇼핑 전에 이치란 본사 총본점에서 이른 저녁",
           "details": [
-            "현재 24시간 영업"
+            "식사 약 40~50분 예상, 대기 시간은 별도",
+            "본사 총본점은 24시간 운영 안내"
           ],
           "location": {
             "lat": 33.5948,
@@ -262,22 +167,119 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "텐진에서 나카스 방향 도보"
+            "label": "숙소에서 이치란 본사 총본점까지 도보 약 8분"
           }
         },
         {
-          "id": "01-16",
+          "id": "01-10",
           "category": "shopping",
-          "name": "돈키호테 나카스점",
-          "time": "20:30",
-          "description": "생활용품과 1차 기념품 쇼핑",
+          "name": "스투시 후쿠오카",
+          "time": "17:35",
+          "description": "19시 마감 전에 먼저 방문",
+          "details": [
+            "공식 안내 주소: 텐진 2-5-13",
+            "영업시간 11:00~19:00"
+          ],
+          "source": "https://jp.stussy.com/blogs/chapters/stussy-fukuoka",
           "location": {
-            "lat": 33.5943,
-            "lng": 130.4061
+            "lat": 33.5877376,
+            "lng": 130.3973979
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "나카스카와바타에서 텐진 방면 지하철·도보"
+          }
+        },
+        {
+          "id": "01-11",
+          "category": "shopping",
+          "name": "몽벨 후쿠오카 텐진점",
+          "time": "18:05",
+          "description": "스투시에서 가까운 텐진점, 의류·아웃도어 용품 보기",
+          "source": "https://store.montbell.jp/search/shopinfo/?shop_no=618936",
+          "location": {
+            "lat": 33.5877938,
+            "lng": 130.3984352
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "나카스 안 도보"
+            "label": "스투시에서 도보 약 3분"
+          },
+          "details": [
+            "영업시간 10:30~21:00"
+          ]
+        },
+        {
+          "id": "01-12",
+          "category": "shopping",
+          "name": "칼하트 WIP 후쿠오카",
+          "time": "18:40",
+          "description": "다이묘 매장에서 쇼핑",
+          "details": [
+            "영업시간 11:00~20:00"
+          ],
+          "source": "https://www.carhartt-wip.com/en/stores/fukuoka",
+          "location": {
+            "lat": 33.5860933587,
+            "lng": 130.395369485
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "다이묘 방면 도보 약 10분"
+          }
+        },
+        {
+          "id": "01-13",
+          "category": "shopping",
+          "name": "세컨드스트리트 후쿠오카 텐진점",
+          "time": "19:20",
+          "description": "다이묘의 브랜드 빈티지·중고 의류 매장",
+          "details": [
+            "영업시간 11:00~21:00"
+          ],
+          "source": "https://www.2ndstreet.jp/shop/details?shopsId=30973",
+          "location": {
+            "lat": 33.58820372468,
+            "lng": 130.3953317195
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "칼하트에서 도보 약 7분"
+          }
+        },
+        {
+          "id": "01-14",
+          "category": "food",
+          "name": "나카스 포장마차 거리",
+          "time": "20:30",
+          "description": "원하면 가볍게 야식 후 숙소로 복귀",
+          "details": [
+            "포장마차는 보통 18:30~19:00경 영업을 시작",
+            "날씨·점포 사정에 따라 쉬는 곳이 있어 현장에서 확인"
+          ],
+          "source": "https://www.gofukuoka.jp/yatai/",
+          "location": {
+            "lat": 33.5933,
+            "lng": 130.4052
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "다이묘에서 나카스 방면 도보 약 15~20분"
+          }
+        },
+        {
+          "id": "01-15",
+          "category": "stay",
+          "name": "호텔 복귀",
+          "time": "21:30",
+          "description": "야식 후 숙소로 돌아와 첫날 일정 마무리",
+          "location": {
+            "lat": 33.598,
+            "lng": 130.4079
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "나카스에서 숙소까지 도보"
           }
         }
       ]
@@ -288,7 +290,7 @@
       "title": "후쿠쓰 바닷마을 자전거",
       "area": "후쿠마 · 미야지다케 · 쓰야자키",
       "color": "#32665c",
-      "summary": "쓰야자키 옛 거리와 미야지다케 신사를 둘러본 뒤 어항 해산물, 해변을 연결하는 10km 이내 자전거 코스입니다.",
+      "summary": "쓰야자키·미야지다케에서 자전거와 바다를 즐긴 뒤 하카타로 돌아옵니다. 체력이 남으면 저녁 전에 캐널시티와 갭을 짧게 둘러봅니다.",
       "stops": [
         {
           "id": "02-01",
@@ -549,12 +551,45 @@
         },
         {
           "id": "02-17",
+          "category": "place",
+          "name": "캐널시티 하카타",
+          "time": "17:05",
+          "description": "하카타역에서 걸어와 쇼핑·휴식",
+          "location": {
+            "lat": 33.5898,
+            "lng": 130.4107
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "하카타역에서 도보 약 15~20분"
+          }
+        },
+        {
+          "id": "02-18",
+          "category": "shopping",
+          "name": "갭 캐널시티 하카타",
+          "time": "17:20",
+          "description": "캐널시티 사우스빌딩 1층 매장",
+          "source": "https://www.gap.co.jp/stores/?storeID=3639",
+          "location": {
+            "lat": 33.589568,
+            "lng": 130.411763
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "캐널시티 건물 안 이동",
+            "draw": false
+          }
+        },
+        {
+          "id": "02-19",
           "category": "food",
           "name": "하카타 야키토리 저녁",
           "time": "18:30",
           "description": "닭껍질 꼬치와 채소말이",
           "details": [
-            "모든 복귀 지점은 마커로 표시"
+            "모든 복귀 지점은 마커로 표시",
+            "원하면 저녁 전 캐널시티·갭 방문"
           ],
           "includeInBounds": false,
           "location": {
@@ -562,9 +597,8 @@
             "lng": 130.4075
           },
           "routeFromPrevious": {
-            "mode": "transit",
-            "label": "숙소 권역 복귀 · 지도선 생략",
-            "draw": false
+            "mode": "walking",
+            "label": "캐널시티에서 숙소 권역까지 도보 약 15분"
           }
         }
       ]

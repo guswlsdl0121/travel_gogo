@@ -48,54 +48,6 @@
     ]
   },
   "01-09": {
-    "label": "도착 후 디저트",
-    "default": "suzukake",
-    "options": [
-      {
-        "id": "suzukake",
-        "name": "스즈카케 하카타 본점",
-        "description": "화과자와 계절 디저트",
-        "tags": [
-          "화과자",
-          "기념품"
-        ],
-        "source": "https://www.suzukake.co.jp/",
-        "location": {
-          "lat": 33.5968,
-          "lng": 130.4069
-        }
-      },
-      {
-        "id": "manu-coffee",
-        "name": "MANU COFFEE 春吉店",
-        "description": "하카타 도착 후 커피와 디저트",
-        "tags": [
-          "커피",
-          "카페"
-        ],
-        "source": "https://manucoffee.com/",
-        "location": {
-          "lat": 33.5907,
-          "lng": 130.4075
-        }
-      },
-      {
-        "id": "cafedel-sol",
-        "name": "Café del SOL",
-        "description": "팬케이크와 가벼운 디저트",
-        "tags": [
-          "팬케이크",
-          "카페"
-        ],
-        "source": "https://www.cafedelsol.jp/",
-        "location": {
-          "lat": 33.5917,
-          "lng": 130.4018
-        }
-      }
-    ]
-  },
-  "01-15": {
     "label": "첫날 저녁",
     "default": "ichiran-main",
     "options": [
@@ -225,7 +177,7 @@
       }
     ]
   },
-  "02-17": {
+  "02-19": {
     "label": "후쿠오카 저녁",
     "default": "torikawa-daijin",
     "options": [
