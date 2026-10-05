@@ -164,13 +164,14 @@
   cursor: pointer;
   font-size: 0.7rem;
   font-weight: 800;
+  transform: translateX(var(--pin-offset-x, 0px));
   transition: transform 140ms ease;
 }
 .map-pin.is-active {
   border-color: #fff7ed;
   background: var(--pin-active-color);
   box-shadow: 0 0 0 4px rgba(217, 72, 50, 0.22), 0 5px 14px rgba(21, 29, 24, 0.3);
-  transform: scale(1.22);
+  transform: translateX(var(--pin-offset-x, 0px)) scale(1.22);
 }
 
 .map-legend {

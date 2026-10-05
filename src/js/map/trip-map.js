@@ -47,11 +47,23 @@ export class TripMap {
     this.renderFocusActions(focusGroups);
 
     const visibleStops = day.stops.filter((stop) => stop.mapVisible !== false);
+    const coordinateKey = (stop) => `${stop.location.lat},${stop.location.lng}`;
+    const sharedCoordinates = new Map();
+    visibleStops.forEach((stop) => {
+      const key = coordinateKey(stop);
+      sharedCoordinates.set(key, (sharedCoordinates.get(key) ?? 0) + 1);
+    });
+    const coordinateSlots = new Map();
 
     visibleStops.forEach((stop) => {
       const index = day.stops.indexOf(stop);
       const position = stop.location;
       const content = createPin(index + 1, day.color, stop.name);
+      const key = coordinateKey(stop);
+      const slot = coordinateSlots.get(key) ?? 0;
+      coordinateSlots.set(key, slot + 1);
+      const count = sharedCoordinates.get(key);
+      if (count > 1) content.style.setProperty('--pin-offset-x', `${(slot - (count - 1) / 2) * 23}px`);
       const marker = new google.maps.marker.AdvancedMarkerElement({
         map: this.map,
         position,
@@ -284,7 +296,7 @@ export class TripMap {
       path,
       strokeColor: "#ffffff",
       strokeOpacity: 0.95,
-      strokeWeight: 10,
+      strokeWeight: 4,
       zIndex: 2,
       clickable: false
     });
@@ -293,7 +305,7 @@ export class TripMap {
       path,
       strokeColor: color,
       strokeOpacity: 0.96,
-      strokeWeight: 5,
+      strokeWeight: 2.5,
       zIndex: 3,
       clickable: false,
       icons: undefined
@@ -306,13 +318,13 @@ export class TripMap {
       const isActive = entry.stopIds.includes(stopId);
       entry.casing?.setOptions({
         strokeOpacity: isActive ? 1 : 0.95,
-        strokeWeight: isActive ? 14 : 10,
+        strokeWeight: isActive ? 5 : 4,
         zIndex: isActive ? 8 : 2
       });
       entry.polyline.setOptions({
         strokeColor: isActive ? "#d94832" : entry.color,
         strokeOpacity: isActive ? 1 : 0.96,
-        strokeWeight: isActive ? 9 : 5,
+        strokeWeight: isActive ? 3.5 : 2.5,
         zIndex: isActive ? 9 : 3
       });
     });
