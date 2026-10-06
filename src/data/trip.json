@@ -391,10 +391,10 @@
     {
       "id": "02",
       "date": "2026-10-07",
-      "title": "하카타 아침·스페이스월드 아울렛·모지코·고쿠라",
-      "area": "하카타 · 스페이스월드 · 모지코 · 고쿠라",
+      "title": "하카타 아침·아울렛·모지코·고쿠라·텐진 야키토리",
+      "area": "하카타 · 스페이스월드 · 모지코 · 고쿠라 · 텐진",
       "color": "#32665c",
-      "summary": "08:30 기상 후 하카타역 지하상가 PRONTO에서 간단히 아침을 먹고, 10:00 소닉 13호로 고쿠라를 거쳐 스페이스월드 아울렛에 갑니다. 13:04 열차로 모지코에 이동해 야끼카레와 모지코 레트로를 즐긴 뒤 고쿠라성·정원을 보고 19:14 구간쾌속으로 하카타에 돌아옵니다.",
+      "summary": "08:30 기상 후 하카타역에서 아침을 먹고 10:00 소닉 13호로 출발합니다. 스페이스월드 아울렛을 짧게 둘러본 뒤 모지코에서 야끼카레와 레트로 산책, 고쿠라 만화박물관·성·정원을 차례로 즐깁니다. 19:14 열차로 하카타에 돌아와 텐진에서 야키토리와 맥주로 마무리합니다.",
       "stops": [
         {
           "id": "02-01",
@@ -417,8 +417,8 @@
           "time": "09:00",
           "description": "하카타역 지하상가에서 간단한 아침 식사",
           "details": [
-            "아침 메뉴 제공 시간 7:00~10:30",
-            "수요일 영업 시작 7:00 · 주문 전 당일 영업 여부 확인"
+            "아침 메뉴 7:00~10:30",
+            "수요일 영업 시작 7:00"
           ],
           "source": "https://shop.pronto.co.jp/detail/8019/",
           "location": {
@@ -437,7 +437,7 @@
           "time": "10:00",
           "description": "특급 소닉 13호 고쿠라행 탑승 · 10:41 도착",
           "details": [
-            "2026년 10월 7일 10:00 하카타 출발 · 3번 승강장",
+            "2026년 10월 7일 10:00 출발 · 3번 승강장",
             "보통차 일부 지정석 · JR 규슈 시간표 기준"
           ],
           "source": "https://www.jrkyushu-timetable.jp/sp/2610/0023/00238301.html?d=20261007&t=2828301e",
@@ -455,10 +455,10 @@
           "category": "transport",
           "name": "고쿠라역 환승",
           "time": "10:41",
-          "description": "소닉 도착 후 가고시마 본선으로 스페이스월드 방면 환승",
+          "description": "소닉 도착 후 가고시마 본선 스페이스월드 방면 환승",
           "details": [
-            "환승 연결과 승강장은 당일 JR 안내판에서 확인",
-            "스페이스월드 도착 시각은 환승 대기에 따라 달라질 수 있음"
+            "환승 열차·승강장은 당일 JR 안내 확인",
+            "스페이스월드역 도착 시각은 약 10:55 예상"
           ],
           "location": {
             "lat": 33.886923,
@@ -471,33 +471,13 @@
         },
         {
           "id": "02-05",
-          "category": "transport",
-          "name": "스페이스월드역",
-          "time": "11:00",
-          "description": "고쿠라에서 JR 가고시마 본선으로 이동 (도착 시각 예상)",
-          "details": [
-            "역에서 아울렛까지 도보 이동",
-            "환승 후 열차 시각 및 도착은 당일 JR 안내 확인"
-          ],
-          "source": "https://the-outlets-kitakyushu.aeonmall.com/static-pages/access",
-          "location": {
-            "lat": 33.8710982,
-            "lng": 130.8059894
-          },
-          "routeFromPrevious": {
-            "mode": "transit",
-            "label": "고쿠라에서 JR 가고시마 본선 환승"
-          }
-        },
-        {
-          "id": "02-06",
           "category": "shopping",
           "name": "THE OUTLETS KITAKYUSHU",
-          "time": "11:10",
-          "description": "스페이스월드역 옆 아울렛 둘러보기",
+          "time": "11:00",
+          "description": "스페이스월드역 옆 아울렛 쇼핑",
           "details": [
             "매장 영업 10:00~20:00",
-            "12:45 무렵 역으로 이동해 13:04 열차 탑승"
+            "12:05 무렵 역으로 이동해 12:20 열차 탑승 · 쇼핑은 약 1시간"
           ],
           "source": "https://the-outlets-kitakyushu.aeonmall.com/static-pages/hours",
           "location": {
@@ -510,16 +490,16 @@
           }
         },
         {
-          "id": "02-07",
+          "id": "02-06",
           "category": "train",
           "name": "스페이스월드역",
-          "time": "13:04",
-          "description": "JR 가고시마 본선 모지코행 탑승 · 13:32 도착",
+          "time": "12:20",
+          "description": "JR 구간쾌속 모지코행 탑승 · 12:56 도착",
           "details": [
-            "2026년 10월 7일 운행 시간표 기준",
-            "열차 운행 및 승강장은 당일 안내 확인"
+            "열차번호 3124M · 매일 운전 · 2026년 10월 시간표",
+            "소닉 환승 후 아울렛 체류시간은 짧게 잡음"
           ],
-          "source": "https://www.jrkyushu-timetable.jp/sp/2610/0021/00211901.html?d=20261005&t=2926800",
+          "source": "https://www.jrkyushu-timetable.jp/sp/2610/0024/00248201.html?d=20261005&t=2926800",
           "location": {
             "lat": 33.8710982,
             "lng": 130.8059894
@@ -530,15 +510,15 @@
           }
         },
         {
-          "id": "02-08",
+          "id": "02-07",
           "category": "food",
           "name": "모지코 야끼카레 · BEAR FRUITS",
-          "time": "14:00",
-          "description": "모지코 명물 야끼카레로 늦은 점심",
+          "time": "13:10",
+          "description": "모지코 명물 야끼카레로 점심",
           "details": [
             "주소: 1-4-7 Nishi-kaigan, Mojiku, Mojiko Center Building 1F",
-            "공식 안내 영업 11:00~21:00 · 붐비면 대기 가능",
-            "지도 표시는 모지코역 인근 구역 기준"
+            "영업 안내 11:00~21:00 · 붐비면 대기 가능",
+            "지도 핀은 모지코역 인근 기준"
           ],
           "source": "https://bearfruits.jp/",
           "location": {
@@ -551,15 +531,15 @@
           }
         },
         {
-          "id": "02-09",
+          "id": "02-08",
           "category": "place",
           "name": "모지코 레트로 산책",
-          "time": "15:00",
-          "description": "모지코역과 항구 주변 역사 건축물 구경",
+          "time": "14:00",
+          "description": "역과 항구 주변 건축물·산책로 구경",
           "details": [
-            "모지코역 · 구 모지세관 · 블루윙 모지 · 구 오사카상선 건물",
+            "모지코역 · 구 모지세관 · 블루윙 모지 · 구 오사카상선",
             "구 모지세관은 9:00~17:00 무료 입장",
-            "16:45 전후 역으로 돌아와 열차 탑승 준비"
+            "15:25 무렵 역으로 이동해 15:41 열차 탑승"
           ],
           "source": "https://www.crossroadfukuoka.jp/en/spot/13184",
           "location": {
@@ -572,16 +552,16 @@
           }
         },
         {
-          "id": "02-10",
+          "id": "02-09",
           "category": "train",
           "name": "모지코역",
-          "time": "16:59",
-          "description": "JR 가고시마 본선 고쿠라행 탑승 · 17:12 도착",
+          "time": "15:41",
+          "description": "JR 보통열차 하카타 방면으로 고쿠라 이동 · 15:55 도착",
           "details": [
-            "2026년 10월 6일 기준 매일 운행 시간표",
-            "승강장은 당일 역 안내 확인"
+            "열차번호 141M · 매일 운전",
+            "고쿠라 15:55 도착 · 5번 승강장"
           ],
-          "source": "https://www.jrkyushu-timetable.jp/sp/2610/0021/00213003.html?d=20261006&t=2826001",
+          "source": "https://www.jrkyushu-timetable.jp/sp/2610/0026/00267301.html?d=20261006&t=2834500",
           "location": {
             "lat": 33.945,
             "lng": 130.961389
@@ -592,14 +572,36 @@
           }
         },
         {
+          "id": "02-10",
+          "category": "place",
+          "name": "북큐슈 만화박물관",
+          "time": "16:10",
+          "description": "고쿠라역 옆 아루아루시티 5·6층 만화박물관 관람",
+          "details": [
+            "개관 11:00~19:00 · 입장은 18:30까지",
+            "화요일 휴관(공휴일이면 다음 날) · 10월 7일 수요일",
+            "관람은 약 50분으로 잡고 정원으로 이동",
+            "지도 표시는 고쿠라역 인근 기준"
+          ],
+          "source": "https://www.ktqmm.jp/about/faq",
+          "location": {
+            "lat": 33.886923,
+            "lng": 130.883181
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "고쿠라역 옆 아루아루시티"
+          }
+        },
+        {
           "id": "02-11",
           "category": "place",
           "name": "고쿠라성 정원",
-          "time": "17:30",
-          "description": "폐원 전 정원을 먼저 짧게 관람",
+          "time": "17:05",
+          "description": "폐원 전에 일본식 정원 산책",
           "details": [
             "통상 4~10월 9:00~18:00",
-            "관람 시간을 고려해 입장 가능 여부를 현장에서 확인"
+            "정원 관람 약 40분 · 계절 행사/운영 변경 확인"
           ],
           "source": "https://kokura-castle.jp/schedule/",
           "location": {
@@ -608,7 +610,7 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "고쿠라역에서 성·정원 방향으로 이동"
+            "label": "만화박물관에서 성 방향으로 이동"
           }
         },
         {
@@ -616,10 +618,10 @@
           "category": "place",
           "name": "고쿠라성",
           "time": "18:00",
-          "description": "성 주변과 천수각 전시 관람",
+          "description": "천수각 전시와 성 주변 관람",
           "details": [
             "4~10월 통상 9:00~20:00 · 최종 입장 19:30",
-            "18:45 무렵 고쿠라역으로 출발"
+            "18:45 무렵 역으로 출발"
           ],
           "source": "https://kokura-castle.jp/schedule/",
           "location": {
@@ -628,7 +630,7 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "정원과 인접"
+            "label": "고쿠라성 정원과 인접"
           }
         },
         {
@@ -638,8 +640,8 @@
           "time": "19:14",
           "description": "JR 구간쾌속 하카타행 탑승 · 20:41 도착",
           "details": [
-            "2026년 10월 6일 기준 매일 운행 시간표",
-            "고쿠라 19:14 출발 · 하카타 20:41 도착"
+            "매일 운전 · 고쿠라 19:14 출발 6번 승강장",
+            "하카타 20:41 도착 5번 승강장"
           ],
           "source": "https://www.jrkyushu-timetable.jp/sp/2610/0024/00247702.html?d=20261006&t=2815502",
           "location": {
@@ -648,7 +650,7 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "고쿠라성에서 고쿠라역으로 이동"
+            "label": "고쿠라성에서 역으로 이동"
           }
         },
         {
@@ -658,7 +660,7 @@
           "time": "20:41",
           "description": "고쿠라에서 구간쾌속으로 하카타 복귀",
           "details": [
-            "도착 후 숙소 또는 저녁 일정으로 이동"
+            "저녁은 텐진에서 야키토리와 맥주로 마무리"
           ],
           "location": {
             "lat": 33.5902,
@@ -667,6 +669,45 @@
           "routeFromPrevious": {
             "mode": "transit",
             "label": "JR 구간쾌속 · 약 87분"
+          }
+        },
+        {
+          "id": "02-15",
+          "category": "transport",
+          "name": "텐진으로 이동",
+          "time": "21:00",
+          "description": "지하철 공항선으로 텐진 이동",
+          "details": [
+            "하카타에서 텐진까지 지하철 약 6분 · 승강장 이동 시간 별도"
+          ],
+          "location": {
+            "lat": 33.5925853,
+            "lng": 130.3973608
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "하카타역에서 텐진역"
+          }
+        },
+        {
+          "id": "02-16",
+          "category": "food",
+          "name": "야키토리와 맥주 · 博多とりくら 天神本店",
+          "time": "21:15",
+          "description": "텐진에서 가볍게 야키토리와 맥주로 마무리",
+          "details": [
+            "주소: 福岡県福岡市中央区天神3丁目2-3",
+            "10월 7일(수) 특이영업: 17:00 오픈 · 24:00 마감 · 라스트오더 23:00",
+            "늦은 저녁 가능 · 23시까지 주문 필요 · 전자담배 가능 점포"
+          ],
+          "source": "https://tenjin-torikura.com/table/",
+          "location": {
+            "lat": 33.5925853,
+            "lng": 130.3973608
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "텐진역에서 도보 이동"
           }
         }
       ]
