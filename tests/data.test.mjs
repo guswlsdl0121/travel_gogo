@@ -29,7 +29,7 @@ test('all plans and food alternatives resolve without mutating the catalog', () 
 
 test('invalid plan, option slot and focus references are rejected', () => {
   for (const corrupt of [
-    (copy) => { copy.planDefinitions['02'].plans[1].sequence.push('02-99'); },
+    (copy) => { copy.planDefinitions['02'].plans[0].sequence.push('02-99'); },
     (copy) => { copy.choiceDefinitions['99-01'] = Object.values(copy.choiceDefinitions)[0]; },
     (copy) => { copy.focusGroups['01'][0].stopIds.push('01-99'); }
   ]) {
