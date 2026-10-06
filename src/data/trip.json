@@ -391,58 +391,93 @@
     {
       "id": "02",
       "date": "2026-10-07",
-      "title": "쿠로다한 점심·기타큐슈 아울렛·고쿠라",
-      "area": "하카타 · 스페이스월드 · 고쿠라",
+      "title": "하카타 아침·스페이스월드 아울렛·모지코·고쿠라",
+      "area": "하카타 · 스페이스월드 · 모지코 · 고쿠라",
       "color": "#32665c",
-      "summary": "하카타의 마구로토 고항 쿠로다한에서 11시에 점심을 먹고, 12:20 소닉 23호와 고쿠라 환승으로 스페이스월드 아울렛에 갑니다. 아울렛 쇼핑 뒤 고쿠라성과 정원을 짧게 둘러보고 17:13 JR 구간쾌속으로 하카타에 돌아옵니다.",
+      "summary": "08:30 기상 후 하카타역 지하상가 PRONTO에서 간단히 아침을 먹고, 10:00 소닉 13호로 고쿠라를 거쳐 스페이스월드 아울렛에 갑니다. 13:04 열차로 모지코에 이동해 야끼카레와 모지코 레트로를 즐긴 뒤 고쿠라성·정원을 보고 19:14 구간쾌속으로 하카타에 돌아옵니다.",
       "stops": [
         {
           "id": "02-01",
-          "category": "food",
-          "name": "마구로토 고항 쿠로다한 하카타점 マグロとご飯 黒田飯 【博多店】",
-          "time": "11:00",
-          "description": "하카타역 동쪽 AL빌딩 1층에서 점심",
+          "category": "stay",
+          "name": "기상 · 숙소 출발 준비",
+          "time": "08:30",
+          "description": "숙소에서 기상하고 외출 준비",
           "details": [
-            "주소: Fukuoka, Hakata Ward, Hakataekihigashi, 1 Chome−13−18 ALビル 1階",
-            "영업 11:00~15:00 / 16:00~20:30 · 목요일 휴무(사용자 제공)",
-            "하카타역 치쿠시구치에서 도보 약 5분"
+            "숙소: 호텔 오리엔탈 익스프레스 후쿠오카 나카스 가와바타"
           ],
-          "source": "https://magurotogohankurodahanhakata.owst.jp/",
           "location": {
-            "lat": 33.5904,
-            "lng": 130.423
+            "lat": 33.598,
+            "lng": 130.4079
           }
         },
         {
           "id": "02-02",
+          "category": "food",
+          "name": "PRONTO 하카타역 지하상가점",
+          "time": "09:00",
+          "description": "하카타역 지하상가에서 간단한 아침 식사",
+          "details": [
+            "아침 메뉴 제공 시간 7:00~10:30",
+            "수요일 영업 시작 7:00 · 주문 전 당일 영업 여부 확인"
+          ],
+          "source": "https://shop.pronto.co.jp/detail/8019/",
+          "location": {
+            "lat": 33.5897,
+            "lng": 130.4202
+          },
+          "routeFromPrevious": {
+            "mode": "transit",
+            "label": "숙소에서 하카타역으로 이동"
+          }
+        },
+        {
+          "id": "02-03",
           "category": "train",
           "name": "하카타역",
-          "time": "12:20",
-          "description": "특급 소닉 23호 오이타행 탑승 · 고쿠라 13:07 도착",
+          "time": "10:00",
+          "description": "특급 소닉 13호 고쿠라행 탑승 · 10:41 도착",
           "details": [
-            "10월 7일 매일 운전 · 3번 승강장 출발",
-            "고쿠라역에서 가고시마 본선 스페이스월드 방면 열차로 환승",
-            "보통차 일부 지정석 · JR 규슈에서 좌석 예약 가능"
+            "2026년 10월 7일 10:00 하카타 출발 · 3번 승강장",
+            "보통차 일부 지정석 · JR 규슈 시간표 기준"
           ],
-          "source": "https://www.jrkyushu-timetable.jp/sp/2610/0001/00014601.html?d=20261007&t=2828301e",
+          "source": "https://www.jrkyushu-timetable.jp/sp/2610/0023/00238301.html?d=20261007&t=2828301e",
           "location": {
             "lat": 33.5902,
             "lng": 130.4207
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "식당에서 하카타역까지 도보 약 5분"
+            "label": "식사 후 하카타역 승강장으로 이동"
           }
         },
         {
-          "id": "02-03",
+          "id": "02-04",
+          "category": "transport",
+          "name": "고쿠라역 환승",
+          "time": "10:41",
+          "description": "소닉 도착 후 가고시마 본선으로 스페이스월드 방면 환승",
+          "details": [
+            "환승 연결과 승강장은 당일 JR 안내판에서 확인",
+            "스페이스월드 도착 시각은 환승 대기에 따라 달라질 수 있음"
+          ],
+          "location": {
+            "lat": 33.886923,
+            "lng": 130.883181
+          },
+          "routeFromPrevious": {
+            "mode": "connection",
+            "label": "소닉 13호 도착"
+          }
+        },
+        {
+          "id": "02-05",
           "category": "transport",
           "name": "스페이스월드역",
-          "time": "13:30",
-          "description": "고쿠라역에서 JR 가고시마 본선으로 환승해 도착(예상 시각)",
+          "time": "11:00",
+          "description": "고쿠라에서 JR 가고시마 본선으로 이동 (도착 시각 예상)",
           "details": [
-            "역에서 아울렛까지 도보 약 5분",
-            "환승 열차와 실제 도착 시각은 당일 JR 안내에서 확인"
+            "역에서 아울렛까지 도보 이동",
+            "환승 후 열차 시각 및 도착은 당일 JR 안내 확인"
           ],
           "source": "https://the-outlets-kitakyushu.aeonmall.com/static-pages/access",
           "location": {
@@ -451,18 +486,18 @@
           },
           "routeFromPrevious": {
             "mode": "transit",
-            "label": "고쿠라역에서 JR 가고시마 본선 환승"
+            "label": "고쿠라에서 JR 가고시마 본선 환승"
           }
         },
         {
-          "id": "02-04",
+          "id": "02-06",
           "category": "shopping",
           "name": "THE OUTLETS KITAKYUSHU",
-          "time": "13:40",
-          "description": "스페이스월드역 옆 아울렛 쇼핑",
+          "time": "11:10",
+          "description": "스페이스월드역 옆 아울렛 둘러보기",
           "details": [
             "매장 영업 10:00~20:00",
-            "15:15까지 관람 후 고쿠라로 이동"
+            "12:45 무렵 역으로 이동해 13:04 열차 탑승"
           ],
           "source": "https://the-outlets-kitakyushu.aeonmall.com/static-pages/hours",
           "location": {
@@ -471,55 +506,100 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "스페이스월드역에서 도보 약 5분"
-          }
-        },
-        {
-          "id": "02-05",
-          "category": "transport",
-          "name": "고쿠라역",
-          "time": "15:45",
-          "description": "JR로 고쿠라역에 돌아와 고쿠라성 방면으로 이동",
-          "details": [
-            "스페이스월드역에서 고쿠라까지 열차 약 15분 내외 · 환승/대기 별도"
-          ],
-          "location": {
-            "lat": 33.886923,
-            "lng": 130.883181
-          },
-          "routeFromPrevious": {
-            "mode": "transit",
-            "label": "스페이스월드역에서 JR로 고쿠라 이동"
-          }
-        },
-        {
-          "id": "02-06",
-          "category": "place",
-          "name": "고쿠라성",
-          "time": "16:10",
-          "description": "천수각 전시 관람",
-          "details": [
-            "4~10월 통상 9:00~20:00 · 최종 입장 19:30",
-            "하카타행 열차를 위해 16:55 전후 성을 나설 예정"
-          ],
-          "source": "https://kokura-castle.jp/schedule/",
-          "location": {
-            "lat": 33.8845,
-            "lng": 130.87417
-          },
-          "routeFromPrevious": {
-            "mode": "walking",
-            "label": "고쿠라역에서 도보 이동"
+            "label": "스페이스월드역에서 도보 이동"
           }
         },
         {
           "id": "02-07",
+          "category": "train",
+          "name": "스페이스월드역",
+          "time": "13:04",
+          "description": "JR 가고시마 본선 모지코행 탑승 · 13:32 도착",
+          "details": [
+            "2026년 10월 7일 운행 시간표 기준",
+            "열차 운행 및 승강장은 당일 안내 확인"
+          ],
+          "source": "https://www.jrkyushu-timetable.jp/sp/2610/0021/00211901.html?d=20261005&t=2926800",
+          "location": {
+            "lat": 33.8710982,
+            "lng": 130.8059894
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "아울렛에서 역으로 이동"
+          }
+        },
+        {
+          "id": "02-08",
+          "category": "food",
+          "name": "모지코 야끼카레 · BEAR FRUITS",
+          "time": "14:00",
+          "description": "모지코 명물 야끼카레로 늦은 점심",
+          "details": [
+            "주소: 1-4-7 Nishi-kaigan, Mojiku, Mojiko Center Building 1F",
+            "공식 안내 영업 11:00~21:00 · 붐비면 대기 가능",
+            "지도 표시는 모지코역 인근 구역 기준"
+          ],
+          "source": "https://bearfruits.jp/",
+          "location": {
+            "lat": 33.945,
+            "lng": 130.961389
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "모지코역에서 도보 이동"
+          }
+        },
+        {
+          "id": "02-09",
+          "category": "place",
+          "name": "모지코 레트로 산책",
+          "time": "15:00",
+          "description": "모지코역과 항구 주변 역사 건축물 구경",
+          "details": [
+            "모지코역 · 구 모지세관 · 블루윙 모지 · 구 오사카상선 건물",
+            "구 모지세관은 9:00~17:00 무료 입장",
+            "16:45 전후 역으로 돌아와 열차 탑승 준비"
+          ],
+          "source": "https://www.crossroadfukuoka.jp/en/spot/13184",
+          "location": {
+            "lat": 33.945,
+            "lng": 130.961389
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "역·항구 주변 도보 코스"
+          }
+        },
+        {
+          "id": "02-10",
+          "category": "train",
+          "name": "모지코역",
+          "time": "16:59",
+          "description": "JR 가고시마 본선 고쿠라행 탑승 · 17:12 도착",
+          "details": [
+            "2026년 10월 6일 기준 매일 운행 시간표",
+            "승강장은 당일 역 안내 확인"
+          ],
+          "source": "https://www.jrkyushu-timetable.jp/sp/2610/0021/00213003.html?d=20261006&t=2826001",
+          "location": {
+            "lat": 33.945,
+            "lng": 130.961389
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "모지코 레트로에서 역으로 이동"
+          }
+        },
+        {
+          "id": "02-11",
           "category": "place",
           "name": "고쿠라성 정원",
-          "time": "16:45",
-          "description": "고쿠라성 옆 일본 정원 산책",
+          "time": "17:30",
+          "description": "폐원 전 정원을 먼저 짧게 관람",
           "details": [
-            "통상 4~10월 9:00~18:00 · 관람은 짧게 조정"
+            "통상 4~10월 9:00~18:00",
+            "관람 시간을 고려해 입장 가능 여부를 현장에서 확인"
           ],
           "source": "https://kokura-castle.jp/schedule/",
           "location": {
@@ -528,36 +608,57 @@
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "고쿠라성 옆"
+            "label": "고쿠라역에서 성·정원 방향으로 이동"
           }
         },
         {
-          "id": "02-08",
+          "id": "02-12",
+          "category": "place",
+          "name": "고쿠라성",
+          "time": "18:00",
+          "description": "성 주변과 천수각 전시 관람",
+          "details": [
+            "4~10월 통상 9:00~20:00 · 최종 입장 19:30",
+            "18:45 무렵 고쿠라역으로 출발"
+          ],
+          "source": "https://kokura-castle.jp/schedule/",
+          "location": {
+            "lat": 33.8845,
+            "lng": 130.87417
+          },
+          "routeFromPrevious": {
+            "mode": "walking",
+            "label": "정원과 인접"
+          }
+        },
+        {
+          "id": "02-13",
           "category": "train",
           "name": "고쿠라역",
-          "time": "17:13",
-          "description": "JR 구간쾌속 하카타행 탑승",
+          "time": "19:14",
+          "description": "JR 구간쾌속 하카타행 탑승 · 20:41 도착",
           "details": [
-            "고쿠라 17:13 출발 · 하카타 18:21 도착 · 매일 운전"
+            "2026년 10월 6일 기준 매일 운행 시간표",
+            "고쿠라 19:14 출발 · 하카타 20:41 도착"
           ],
-          "source": "https://www.jrkyushu-timetable.jp/sp/2610/0021/00213003.html?d=20261007&t=2815502l",
+          "source": "https://www.jrkyushu-timetable.jp/sp/2610/0024/00247702.html?d=20261006&t=2815502",
           "location": {
             "lat": 33.886923,
             "lng": 130.883181
           },
           "routeFromPrevious": {
             "mode": "walking",
-            "label": "정원에서 고쿠라역까지 도보 이동"
+            "label": "고쿠라성에서 고쿠라역으로 이동"
           }
         },
         {
-          "id": "02-09",
+          "id": "02-14",
           "category": "train",
-          "name": "하카타역",
-          "time": "18:21",
-          "description": "고쿠라에서 JR 구간쾌속으로 하카타 도착",
+          "name": "하카타역 도착",
+          "time": "20:41",
+          "description": "고쿠라에서 구간쾌속으로 하카타 복귀",
           "details": [
-            "하카타역에서 캐널시티까지 이동"
+            "도착 후 숙소 또는 저녁 일정으로 이동"
           ],
           "location": {
             "lat": 33.5902,
@@ -565,46 +666,7 @@
           },
           "routeFromPrevious": {
             "mode": "transit",
-            "label": "JR 구간쾌속 · 약 68분"
-          }
-        },
-        {
-          "id": "02-10",
-          "category": "place",
-          "name": "Zone8 진격의 거인 테마 카페·굿즈",
-          "time": "18:50",
-          "description": "캐널시티 이스트빌 2층 굿즈와 3층 테마 카페 관람",
-          "details": [
-            "카페 11:00~21:00 · 이용 조건은 방문 전 확인"
-          ],
-          "source": "https://canalcity.co.jp/shop/detail/11000304?tenant_id=11000304",
-          "location": {
-            "lat": 33.5898,
-            "lng": 130.4107
-          },
-          "routeFromPrevious": {
-            "mode": "walking",
-            "label": "하카타역에서 캐널시티까지 도보 이동"
-          }
-        },
-        {
-          "id": "02-11",
-          "category": "place",
-          "name": "캐널 아쿠아 파노라마 Imagination",
-          "time": "20:00",
-          "description": "샘플라자 벽면 프로젝션·분수 쇼 관람",
-          "details": [
-            "20:00 상영 · 약 5분 · 당일 현장 일정 확인"
-          ],
-          "source": "https://canalcity.co.jp/event/detail/40?hold_calendar=&publish_begin=26-03-10&publish_end=",
-          "location": {
-            "lat": 33.5898,
-            "lng": 130.4107
-          },
-          "routeFromPrevious": {
-            "mode": "walking",
-            "label": "캐널시티 내 이동",
-            "draw": false
+            "label": "JR 구간쾌속 · 약 87분"
           }
         }
       ]
